@@ -1,0 +1,179 @@
+@import '../../mixin';
+
+// header
+.ks-navbar {
+  z-index: 100;
+  position: relative;
+  position: sticky;
+  top: 0;
+  height: 0.88rem;
+  background: linear-gradient(135deg, #00f0fe, #1a97ff);
+  display: flex;
+
+  &__title {
+    flex: 1;
+    order: 2;
+    margin: 0;
+    line-height: 0.88rem;
+    font-size: 0.34rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    @include ellipsis;
+
+    &--kushua {
+      font-size: 0;
+      background: url(../../assets/icon_header_title.png) no-repeat center;
+      background-size: 0.9rem;
+    }
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2rem;
+  }
+
+  &__left {
+    order: 1;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+  }
+
+  &__icon {
+    position: relative;
+    width: 1rem;
+    height: 100%;
+    background: no-repeat center;
+    background-size: 0.48rem;
+    cursor: pointer;
+
+    &--more {
+      background-image: url(../../assets/icon_header_more.png);
+    }
+
+    &--back {
+      background-image: url(../../assets/icon_back.png);
+    }
+
+    &--upload {
+      background-image: url(../../assets/icon_upload.png);
+    }
+
+    &--edit {
+      background-image: url(../../assets/icon_edit2.png);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 0.28rem;
+    padding: 0 0.24rem;
+    color: #ffffff;
+  }
+}
+
+.ks-navbar {
+  &__login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 0.28rem;
+
+    &__avatar {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      border: 0.02rem solid #fff;
+    }
+
+    &__dot {
+      position: absolute;
+      right: 0;
+      bottom: 0.14rem;
+      width: 0.16rem;
+      height: 0.16rem;
+      border-radius: 50%;
+      background: linear-gradient(315deg, rgba(255, 77, 79, 1) 0%, rgba(255, 120, 117, 1) 100%);
+    }
+  }
+
+  &__logout {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 0.28rem;
+
+    &__avatar {
+      width: 0.46rem;
+      height: 0.46rem;
+    }
+
+    &__text {
+      padding-left: 0.16rem;
+      font-size: 0.28rem;
+      color: #ffffff;
+    }
+  }
+}
+
+.ks-navbar-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  box-sizing: border-box;
+  width: 5.46rem;
+  height: 0.6rem;
+  background: #ffffff;
+  padding: 0 0.18rem;
+  display: flex;
+  align-items: center;
+
+  input {
+    flex: 1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0.28rem;
+    color: #323333;
+
+    &[disabled] {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      // color: #c8cacc;
+      background: transparent;
+    }
+
+    &::placeholder,
+    &[disabled]::placeholder {
+      color: #c8cacc;
+    }
+  }
+
+  i,
+  b {
+    width: 0.34rem;
+    height: 0.34rem;
+    background: url(../../assets/iocn_search_nor.png) no-repeat center;
+    background-size: contain;
+  }
+
+  b {
+    background-image: url(../../assets/icon_close2_dark.png);
+    background-size: 0.28rem;
+    opacity: 0.5;
+  }
+}

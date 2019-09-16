@@ -1,0 +1,331 @@
+@import 'src/mixin';
+
+.share-encyc-panel {
+  background: #ffffff;
+  padding: 0 0.24rem;
+  margin-bottom: 0.18rem;
+}
+
+.share-encyc-banner {
+  position: relative;
+  height: 4.22rem;
+
+  &__mask {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(#fff, 0), #000);
+  }
+
+  &__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    position: absolute;
+    left: 0.24rem;
+    bottom: 0.28rem;
+    width: 4.15rem;
+    height: auto;
+    max-height: 0.56rem * 2;
+    line-height: 0.56rem;
+    color: #ffffff;
+  }
+
+  &__date {
+    position: absolute;
+    right: 0.24rem;
+    bottom: 0.4rem;
+    color: #bcbcbc;
+    font-size: 0.22rem;
+  }
+}
+
+.share-encyc-tags {
+  padding: 0.24rem 0;
+}
+
+.share-encyc-vote {
+  border-bottom: 1px solid #f0f3f5;
+}
+
+.share-encyc-box {
+  .ks-random-bar {
+    width: 0.12rem;
+    height: 0.3rem;
+    margin-right: 0.12rem;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 0.45rem + 0.18rem * 2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 0.01rem;
+      background: #e1e3e6;
+    }
+
+    &__title {
+      margin: 0;
+      position: relative;
+      color: #323333;
+      font-weight: 500;
+      background: #fff;
+      padding-right: 0.12rem;
+      font-size: 0.32rem;
+    }
+
+    &__bar {
+      position: relative;
+      background: #fff;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    margin: 0;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    padding-left: 0.18rem + 0.06rem;
+    font-size: 0.32rem;
+    font-weight: normal;
+    color: #323333;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0.03rem;
+      width: 0.06rem;
+      height: 0.06rem;
+      background: linear-gradient(139deg, #00f0fe, #1a97ff);
+    }
+  }
+}
+
+.share-encyc-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.84rem;
+
+  &__icon {
+    padding-left: 0.42rem + 0.12rem;
+    background: url(../../assets/icon_label_gray.png) no-repeat left center;
+    background-size: 0.42rem;
+  }
+
+  &__title {
+    font-size: 0.26rem;
+    color: #323333;
+    font-weight: normal;
+  }
+
+  &__arrow {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../../assets/icon_arrow.png) no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    transform: rotate(180deg);
+  }
+}
+
+// 附件
+.share-encyc-attach {
+  border-bottom: 1px solid #e1e3e6;
+
+  &__body {
+    padding-bottom: 0.23rem;
+  }
+
+  .share-encyc-titlebar {
+    cursor: pointer;
+  }
+
+  .share-encyc-titlebar__icon {
+    background-image: url(../../assets/icon_label.png);
+  }
+
+  &--hide .share-encyc-titlebar__title {
+    color: #969899;
+  }
+
+  &--hide .share-encyc-titlebar__icon {
+    background-image: url(../../assets/icon_label_gray.png);
+  }
+
+  &--hide .share-encyc-titlebar__arrow {
+    transform: rotate(0);
+  }
+
+  &--hide &__body {
+    display: none;
+  }
+}
+
+// 参考文献
+.share-encyc-refer {
+  &__list {
+    padding-bottom: 0.24rem;
+  }
+
+  &__item {
+    display: block;
+    color: #969899;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    word-break: break-all;
+    margin-bottom: 0.18rem;
+
+    &--active {
+      color: #179dfe;
+    }
+  }
+
+  .share-encyc-titlebar {
+    cursor: pointer;
+  }
+
+  .share-encyc-titlebar__icon {
+    background-image: url(../../assets/icon_article.png);
+  }
+
+  &--hide .share-encyc-titlebar__title {
+    color: #969899;
+  }
+
+  &--hide .share-encyc-titlebar__icon {
+    background-image: url(../../assets/icon_article_gray.png);
+  }
+
+  &--hide .share-encyc-titlebar__arrow {
+    transform: rotate(0);
+  }
+
+  &--hide &__list {
+    display: none;
+  }
+}
+
+.share-encyc-study {
+  .share-encyc-titlebar__icon {
+    background-image: url(../../assets/icon_study.png);
+  }
+}
+
+// 推荐问题
+.share-encyc-question {
+  padding: 0.16rem 0;
+  border-bottom: 1px solid #ebedf0;
+  cursor: pointer;
+
+  &__title {
+    @include ellipsis;
+    margin: 0;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    font-size: 0.3rem;
+    color: #646566;
+    font-weight: normal;
+  }
+
+  &__tag {
+    padding: 0.18rem 0;
+    font-size: 0.24rem;
+  }
+
+  &__footer {
+    display: flex;
+    margin: 0.04rem;
+    font-size: 0.24rem;
+    color: #969899;
+
+    span {
+      min-width: 1.4rem;
+      padding-right: 0.2rem;
+    }
+  }
+}
+
+// 推荐百科
+.share-encyc-encyc {
+  display: flex;
+  margin: 0.18rem 0;
+  cursor: pointer;
+
+  &__cover {
+    flex-shrink: 0;
+    width: 3.12rem;
+    height: 1.75rem;
+    margin-right: 0.18rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.04rem;
+      background: linear-gradient(90deg, #70f4fe, #13adff);
+    }
+  }
+
+  &__cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0.04rem 0 0 0;
+    font-size: 0.3rem;
+    color: #646566;
+    font-weight: normal;
+    @include ellipsis(2, 0.42rem);
+  }
+
+  &__meta {
+    display: flex;
+    margin: 0.04rem;
+    font-size: 0.24rem;
+    color: #969899;
+
+    span {
+      min-width: 1.4rem;
+      padding-right: 0.2rem;
+    }
+  }
+}
+
+// 空数据
+.share-encyc-empty {
+  position: relative;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #646566;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 3.2rem;
+    height: 2.14rem;
+    margin: 0 auto 0.4rem;
+    background: url(../../assets/empty.png) no-repeat center;
+    background-size: contain;
+  }
+}

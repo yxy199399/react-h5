@@ -1,0 +1,21 @@
+.forum-add-files {
+  display: flex;
+  background: #ffffff;
+  padding-left: 0.24rem;
+
+  &__bar {
+    margin: 0 0.17rem;
+    width: 1px;
+    height: 1.27rem;
+    background: #ebedf0;
+  }
+
+  .ks-file-picker {
+    padding-left: 0;
+
+    &__item {
+      width: 1.27rem;
+      height: 1.27rem;
+    }
+  }
+}

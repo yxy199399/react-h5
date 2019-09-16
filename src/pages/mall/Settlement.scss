@@ -1,0 +1,239 @@
+.sett-addr {
+  display: flex;
+  align-items: center;
+  height: 1.6rem;
+  padding: 0 0.24rem;
+  margin-bottom: 0.18rem;
+  background: #ffffff;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.18rem;
+    background: url(../../assets/icon_location.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__info {
+    min-width: 0;
+    flex: 1;
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+    margin-left: 0.18rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../assets/icon_arrow_black.png) no-repeat center;
+    transform: rotate(270deg);
+    opacity: 0.6;
+    background-size: contain;
+  }
+
+  &__title,
+  &__desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__title {
+    font-size: 0.32rem;
+    color: #323333;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 0.26rem;
+    color: #969899;
+  }
+
+  &__empty {
+    font-size: 0.28rem;
+    color: #646566;
+  }
+}
+
+.sett-goods {
+  background: #ffffff;
+  padding: 0 0.24rem;
+  margin-bottom: 0.18rem;
+
+  &__seller {
+    display: flex;
+    align-items: center;
+    height: 0.66rem;
+    margin-bottom: 0.06rem;
+    border-top: 1px solid #f0f3f5;
+    &:first-child {
+      border-top: 0;
+    }
+
+    span {
+      font-size: 0.26rem;
+      color: #323333;
+      font-weight: 500;
+    }
+
+    .kip {
+      width: 0.42rem;
+      height: 0.42rem;
+      margin-left: 0.16rem;
+      background: url(../../assets/icon_kip_nor.png) no-repeat center;
+      background-size: contain;
+      &__sel {
+        background-image: url(../../assets/icon_kip_sel.png);
+      }
+    }
+  }
+
+  &__footer {
+    margin: 0 -0.24rem;
+    padding: 0 0.24rem;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f3f5;
+
+    span:first-child {
+      font-size: 0.28rem;
+      color: #323333;
+    }
+
+    span:last-child {
+      font-size: 0.4rem;
+      font-weight: 500;
+      color: #ff6f00;
+      &::first-letter {
+        font-size: 0.26rem;
+      }
+    }
+  }
+}
+
+.sett-goods-item {
+  display: flex;
+  padding-bottom: 0.3rem;
+
+  &__cover {
+    flex-shrink: 0;
+    width: 1.08rem;
+    height: 1.08rem;
+    margin-right: 0.18rem;
+  }
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.26rem;
+    color: #323333;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__num {
+    font-size: 0.26rem;
+    color: #323333;
+
+    &::first-letter {
+      font: 0.22rem;
+      color: #969899;
+    }
+  }
+
+  &__price {
+    small {
+      font-size: 0.24rem;
+      color: #969899;
+    }
+    span {
+      display: inline-block;
+      font-size: 0.32rem;
+      color: #323333;
+      &::first-letter {
+        font-size: 0.22rem;
+      }
+    }
+  }
+}
+
+.sett-pay {
+  background: #ffffff;
+  margin-bottom: 0.18rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 0.88rem;
+    margin: 0 0.36rem;
+    border-bottom: 1px solid #ebedf0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__icon {
+    margin-right: 0.25rem;
+    width: 0.34rem;
+    height: 0.34rem;
+    background: no-repeat center;
+    background-size: contain;
+
+    &--wechat {
+      background-image: url(../../assets/icon_wechat.png);
+    }
+
+    &--alipay {
+      background-image: url(../../assets/icon_alipay.png);
+    }
+  }
+
+  &__name {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.26rem;
+    color: #323333;
+  }
+
+  &__check {
+    width: 0.36rem;
+    height: 0.36rem;
+    border-radius: 50%;
+    border: 1px solid #c8cacc;
+  }
+
+  &__item--active &__check {
+    border: none;
+    background: url(../../assets/icon_radio_sel.png) no-repeat center;
+    background-size: contain;
+  }
+}
+
+.sett-pay-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem 0.44rem;
+  height: 0.88rem;
+  font-size: 0.34rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+}

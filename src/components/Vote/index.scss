@@ -1,0 +1,77 @@
+@import '../../mixin';
+
+.ks-vote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__number {
+    @include ellipsis;
+    display: block;
+    font-size: 0.28rem;
+    color: #646566;
+    text-align: center;
+  }
+
+  &__up,
+  &__down {
+    display: block;
+    min-width: 0.36rem;
+    min-height: 0.36rem;
+    background: no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  &__up {
+    background-image: url(../../assets/triangle_up_nor.png);
+  }
+
+  &__down {
+    background-image: url(../../assets/triangle_down_nor.png);
+  }
+
+  &--like &__up {
+    background-image: url(../../assets/triangle_up_sel.png);
+  }
+
+  &--hate &__down {
+    background-image: url(../../assets/triangle_down_sel.png);
+  }
+}
+
+.ks-vote--horizontal {
+  height: 0.82rem;
+  border-top: 1px solid #f0f3f5;
+
+  .ks-vote {
+    &__up,
+    &__down,
+    &__number {
+      flex: 1;
+      height: 0.36rem;
+      border-right: 1px solid #f0f3f5;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    &__number {
+      padding: 0 0.2rem;
+    }
+  }
+}
+
+.ks-vote--vertical {
+  flex-direction: column;
+  width: 1.16rem;
+  height: 2.16rem;
+  background: #f7f9fa;
+
+  .ks-vote {
+    &__number {
+      margin: 0.18rem 0;
+    }
+  }
+}

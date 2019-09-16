@@ -1,0 +1,19 @@
+.ks-title-panel {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid#e1e3e6;
+
+  &__side {
+    border-right: 1px solid #e1e3e6;
+    background: #f7f9fa;
+  }
+
+  &__body {
+    flex: 1;
+    padding: 0.26rem 0.28rem;
+  }
+
+  .ks-title {
+    margin-bottom: 0.18rem;
+  }
+}

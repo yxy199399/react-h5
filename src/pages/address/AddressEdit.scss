@@ -1,0 +1,70 @@
+.address-edit-list {
+  background: #ffffff;
+}
+
+.address-edit-item {
+  display: flex;
+  align-items: center;
+  height: 0.96rem;
+  padding: 0 0.24rem;
+  border-bottom: 1px solid #f0f3f5;
+
+  &__label {
+    min-width: 1.2rem;
+    padding-right: 0.3rem;
+    font-size: 0.28rem;
+    color: #969899;
+  }
+
+  &__cont {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+
+    input {
+      flex: 1;
+      font-size: 0.28rem;
+      color: #323333;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      &::placeholder {
+        color: #c8cacc;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-left: 0.3rem;
+    background: url(../../assets/icon_arrow.png) no-repeat center;
+    background-size: contain;
+    transform: rotate(270deg);
+  }
+
+  &__check {
+    box-sizing: border-box;
+    width: 0.36rem;
+    height: 0.36rem;
+    border-radius: 50%;
+    border: 1px solid #c8cacc;
+
+    &--active {
+      border: 0;
+      background: url(../../assets/icon_radio_sel.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+
+.address-edit-btn {
+  margin: 0.6rem 0.4rem;
+  height: 0.88rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.34rem;
+  background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+}

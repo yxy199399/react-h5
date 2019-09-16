@@ -1,0 +1,23 @@
+.ks-star-lv {
+  display: flex;
+
+  &__item {
+    width: 1em;
+    height: 1em;
+    margin-right: (8em / 24);
+    background: url(../../assets/icon_star.png) no-repeat 0 center;
+    background-size: auto 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--half {
+      background-position-x: (-28em / 24 * 1);
+    }
+
+    &--empty {
+      background-position-x: (-28em / 24 * 2);
+    }
+  }
+}

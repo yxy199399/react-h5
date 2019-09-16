@@ -1,0 +1,17 @@
+.ks-follow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2rem;
+  height: 0.48rem;
+  text-align: center;
+  background: linear-gradient(135deg, #00f0fe, #1a97ff);
+  color: #ffffff;
+  font-size: 0.26rem;
+
+  &--active {
+    color: #1a97ff;
+    border: 1px solid #1a97ff;
+    background: transparent;
+  }
+}

@@ -1,0 +1,26 @@
+.user-order {
+  .ks-tabs {
+    .am-tabs-default-bar-tab {
+      font-weight: 400;
+      font-size: 0.28rem !important;
+      height: 0.9rem !important;
+      color: #646566ff !important;
+    }
+    .am-tabs-default-bar-tab-active {
+      color: #1a97ffff !important;
+    }
+    .am-tabs-default-bar-underline {
+      background: transparent;
+      border: 0;
+
+      &::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 1.8rem;
+        height: 0.04rem;
+        background: linear-gradient(90deg, #00f0fe, #1a97ff);
+      }
+    }
+  }
+}

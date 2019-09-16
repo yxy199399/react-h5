@@ -1,0 +1,19 @@
+.ql-editor {
+  padding: 0;
+  min-width: 0;
+  position: relative;
+  font-size: 0.32rem;
+  color: #646566;
+  word-break: break-all;
+  line-height: 1.5;
+  height: auto;
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  pre {
+    overflow: auto;
+  }
+}

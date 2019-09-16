@@ -1,0 +1,19 @@
+.ks-rec-comment {
+  .ks-card__title {
+    margin-bottom: 0;
+  }
+
+  &__more {
+    display: block;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    text-align: center;
+    color: #1a97ff;
+    font-size: 0.26rem;
+    cursor: pointer;
+  }
+}

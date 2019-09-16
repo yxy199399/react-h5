@@ -1,0 +1,123 @@
+@import 'src/mixin';
+
+.goods-detail-userbar {
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 0.24rem;
+  height: 1.04rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0.24rem;
+    right: 0.24rem;
+    bottom: 0;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  > div {
+    flex: 1;
+  }
+}
+
+.goods-detail-header {
+  background: #ffffff;
+  padding: 0 0.24rem 0.3rem;
+
+  &__hd {
+    padding: 0.18rem 0;
+    display: flex;
+
+    &__price {
+      font-size: 0.4rem;
+      color: #ff6f00;
+
+      &::first-letter {
+        font-size: 0.26rem;
+      }
+    }
+
+    &__btn {
+      margin-left: auto;
+      width: 1.64rem;
+      height: 0.54rem;
+      line-height: 0.54rem;
+      text-align: center;
+      color: #ffffff;
+      background: linear-gradient(90deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+      font-size: 0.28rem;
+    }
+  }
+
+  &__title {
+    margin: 0 0 0.18rem;
+    font-size: 0.26rem;
+    color: #171f24;
+    line-height: 0.48rem;
+    font-weight: 400;
+  }
+}
+
+.goods-detail-gallery {
+  margin-bottom: 0.24rem;
+  height: 7.5rem;
+}
+
+.goods-detail-tabs {
+  background: #ffffff;
+  margin-bottom: 0.24rem;
+}
+
+.goods-detail-desc {
+  padding: 0.24rem;
+  font-size: 0.26rem;
+  color: #323333;
+}
+
+.goods-detail-related {
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0.05rem 0.06rem 0;
+  }
+
+  &__item {
+    width: 3.42rem;
+    height: 4.85rem;
+  }
+
+  &__cover {
+    height: 3.42rem;
+    margin-bottom: 0.12rem;
+  }
+
+  &__title {
+    margin: 0 0 0.12rem;
+    height: 0.37rem;
+    line-height: 0.37rem;
+    color: #323333;
+    @include ellipsis;
+  }
+
+  &__price {
+    height: 0.45rem;
+    line-height: 0.45rem;
+    color: #ff6f00;
+    font-size: 0.32rem;
+
+    &::first-letter {
+      font-size: 0.22rem;
+    }
+  }
+}
+
+.goods-detail-after-sale {
+  padding: 0.24rem 0.22rem;
+  img {
+    display: block;
+    width: 100%;
+  }
+}

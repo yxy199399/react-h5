@@ -1,0 +1,15 @@
+@import 'src/mixin';
+
+.ks-random-bar {
+  display: block;
+  width: 0.06rem;
+  height: 0.24rem;
+  background: #d4d7d9;
+
+  @each $item in $colors {
+    $i: index($colors, $item);
+    &-#{$i} {
+      background: linear-gradient(139deg, nth($item, 1), nth($item, 2));
+    }
+  }
+}

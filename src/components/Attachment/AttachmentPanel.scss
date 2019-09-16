@@ -1,0 +1,56 @@
+.ks-attach-panel {
+  margin: 0 0.24rem;
+  border-top: 1px solid #e1e3e6;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0.9rem;
+    cursor: pointer;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-size: 0.26rem;
+    color: #969899;
+    font-weight: normal;
+
+    padding-left: 0.42rem + 0.12rem;
+    background: url(../../assets/icon_label_gray.png) no-repeat left center;
+    background-size: 0.42rem;
+  }
+
+  &__arrow {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../../assets/icon_arrow.png) no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+  }
+
+  &__body {
+    display: none;
+    padding-bottom: 0.3rem;
+  }
+}
+
+.ks-attach-panel--show {
+  .ks-attach-panel {
+    &__title {
+      color: #323333;
+      background-image: url(../../assets/icon_label.png);
+    }
+
+    &__arrow {
+      transform: rotate(180deg);
+    }
+
+    &__body {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import '../../mixin';
+
+.ks-answer {
+  &__inner {
+    display: flex;
+    padding: 0.3rem 0.18rem 0 0;
+    margin: 0 -0.18rem;
+  }
+
+  &__side {
+    flex-shrink: 0;
+    width: 0.9rem;
+
+    &__battery,
+    &__msg {
+      display: block;
+      padding-top: 0.42 + 0.06rem;
+      margin-bottom: 0.2rem;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      text-align: center;
+      font-size: 0.22rem;
+      color: #646566;
+      background: no-repeat top center;
+      background-size: 0.42rem;
+
+      @include ellipsis;
+    }
+
+    &__battery {
+      background-image: url(../../assets/icon_battery_nor.png);
+      &--active {
+        background-image: url(../../assets/icon_battery.png);
+      }
+    }
+
+    &__msg {
+      background-image: url(../../assets/icon_msg2.png);
+    }
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__content {
+    font-size: 0.28rem;
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 0.7rem;
+    //   background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    // }
+
+    &--folding {
+      max-height: 6rem;
+      overflow: hidden;
+    }
+  }
+
+  &__more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.66rem;
+    font-size: 0.28rem;
+    color: #1a97ff;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: 0.7rem;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+  }
+
+  &__userbar {
+    display: block;
+    padding: 0.25rem 0;
+  }
+
+  &__attach {
+    margin: 0 -0.18rem;
+  }
+}

@@ -1,0 +1,60 @@
+.ks-textarea {
+  background: #fff;
+  padding: 0.16rem 0.24rem 0;
+
+  textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #646566;
+    resize: none;
+    font-size: 0.28rem;
+    line-height: 1.5;
+
+    &::placeholder {
+      color: #c8cacc;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    height: 0.9rem;
+  }
+
+  &__count {
+    margin-left: auto;
+    font-size: 0.26rem;
+    color: #c8cacc;
+    transition: color 0.3s;
+
+    &--warning {
+      color: #ff4d4f;
+    }
+  }
+
+  &__extra-btn {
+    margin-right: 0.42rem;
+    min-width: 0.42rem;
+    height: 0.42rem;
+    font-size: 0.28rem;
+    color: #969899;
+    background: no-repeat left center;
+    background-size: 0.42rem;
+    text-indent: 0.54rem;
+
+    &--image {
+      background-image: url(../../assets/icon_picture_nor.png);
+    }
+
+    &--video {
+      background-image: url(../../assets/icon_video_nor.png);
+    }
+
+    &--attach {
+      background-image: url(../../assets/icon_label_gray.png);
+    }
+  }
+}

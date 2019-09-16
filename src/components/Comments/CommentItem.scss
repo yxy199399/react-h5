@@ -1,0 +1,88 @@
+.ks-comment {
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e1e3e6;
+
+  // &:last-child {
+  //   border-bottom: none;
+  // }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.12rem;
+    padding-top: 0.3rem;
+  }
+
+  &__nick {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 0.38rem;
+    font-size: 0.26rem;
+    font-weight: 500;
+    color: #353535;
+
+    .ks-random-bar {
+      margin-right: 0.1rem;
+    }
+  }
+
+  &__side {
+    font-size: 0.24rem;
+    color: #969899;
+  }
+
+  &__body {
+    .ql-editor {
+      line-height: 0.4rem;
+      font-size: 0.28rem;
+      color: #646566;
+    }
+  }
+
+  &__attach {
+    &__header {
+      padding-top: 0.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__title {
+      height: 0.36rem;
+      padding-left: 0.48rem;
+      color: #969899;
+      font-size: 0.24rem;
+      background: url(../../assets/icon_label_gray.png) no-repeat left center;
+      background-size: 0.36rem;
+    }
+
+    &__arrow {
+      width: 0.3rem;
+      height: 0.3rem;
+      background: url(../../assets/icon_arrow.png) no-repeat center;
+      background-size: contain;
+    }
+
+    &__body {
+      display: none;
+      padding-top: 0.2rem;
+      overflow: hidden;
+    }
+
+    &--show &__title {
+      background-image: url(../../assets/icon_label.png);
+      color: #323333;
+    }
+
+    &--show &__arrow {
+      transform: rotate(180deg);
+    }
+
+    &--show &__body {
+      display: block;
+    }
+  }
+}

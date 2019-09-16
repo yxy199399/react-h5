@@ -1,0 +1,77 @@
+.ks-comment-bar {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 7.5rem;
+  height: 0.88rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0.22rem;
+  background: #fff;
+  border-top: 1px solid #ebedf0;
+
+  &__holder {
+    height: 0.88rem;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 0 0.18rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #f7f9fa;
+    font-size: 0.26rem;
+    color: #969899;
+  }
+
+  &__icon {
+    position: relative;
+    margin-left: 0.3rem;
+    width: 0.48rem;
+    height: 0.48rem;
+    background: no-repeat center;
+    background-size: contain;
+
+    &--msg {
+      background-image: url(../../assets/icon_msg.png);
+    }
+
+    &--answer {
+      background-image: url(../../assets/icon_answer_nor.png);
+    }
+
+    &--share {
+      background-image: url(../../assets/icon_share2.png);
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    padding: 0 0.05rem;
+    min-width: 0.15rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    border-radius: 0.2rem;
+    top: -0.08rem;
+    right: -0.17rem;
+    background: #ff4d4f;
+    color: #ffffff;
+    font-size: 0.16rem;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-left: 0.3rem;
+    width: 1.38rem;
+    height: 0.54rem;
+    line-height: 0.54rem;
+    text-align: center;
+    border-radius: 0.54rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+  }
+}

@@ -1,0 +1,70 @@
+.weapp-share {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  &__body {
+    position: relative;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // margin: auto;
+    width: 5.4rem;
+    border-radius: 0.12rem;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  &__qr {
+    display: block;
+    margin: 0.6rem auto 0.48rem;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  &__close {
+    position: absolute;
+    top: 0.24rem;
+    right: 0.24rem;
+    width: 0.36rem;
+    height: 0.36rem;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 0.35rem;
+      height: 0.04rem;
+      border-radius: 0.2rem;
+      background: #c8cacc;
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+    &::after {
+      transform: rotate(135deg);
+    }
+  }
+  &__info {
+    margin: 0 0 0.6rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #323333;
+  }
+}

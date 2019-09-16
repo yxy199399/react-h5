@@ -1,0 +1,75 @@
+.ks-video {
+  position: relative;
+  height: 4.22rem;
+
+  &__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  &__cover,
+  &__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__mask {
+    background: linear-gradient(180deg, rgba(#00f0fe, 0.4), rgba(#1a97ff, 0.4));
+  }
+
+  &__meta {
+    position: absolute;
+    left: 0.24rem;
+    bottom: 0.24rem;
+
+    &__time,
+    &__views {
+      height: 0.32rem;
+      line-height: 0.32rem;
+      padding: 0 0.12rem;
+      font-size: 0.22rem;
+      color: #ffffff;
+    }
+
+    &__time {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    &__views {
+      margin-left: 0.2rem;
+      padding-left: 0.3rem;
+      background: url(../../assets/icon_eye_white.png) no-repeat left center;
+      background-size: 0.25rem;
+    }
+  }
+
+  &__play {
+    position: absolute;
+
+    bottom: 0.25rem;
+    right: 0.25rem;
+
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(../../assets/play_btn.png) no-repeat center;
+    background-size: contain;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &--center {
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

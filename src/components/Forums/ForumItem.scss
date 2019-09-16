@@ -1,0 +1,228 @@
+@import 'src/mixin';
+
+.ks-forum-item {
+  padding: 0.26rem 0.24rem;
+  background: #ffffff;
+  margin-bottom: 0.18rem;
+
+  &__header {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.18rem;
+
+    &__avatar {
+      display: flex;
+      flex-shrink: 0;
+      margin-right: 0.12rem;
+      width: 0.66rem;
+      height: 0.66rem;
+
+      > div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__userinfo {
+      flex: 1;
+      min-width: 0;
+      padding-right: 0.2rem;
+    }
+
+    &__nick {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 0.26rem;
+        line-height: 0.37rem;
+        color: #1e3a3a;
+        @include ellipsis;
+      }
+
+      .kip {
+        flex-shrink: 0;
+        margin-left: 0.1rem;
+        width: 0.42rem;
+        height: 0.42rem;
+        background: url(../../assets/icon_kip_nor.png) no-repeat;
+        background-size: contain;
+
+        &--sel {
+          background-image: url(../../assets/icon_kip_sel.png);
+        }
+      }
+    }
+
+    &__meta {
+      font-size: 0.22rem;
+      line-height: 0.3rem;
+      color: #969899;
+      @include ellipsis;
+    }
+  }
+
+  &__content {
+    margin: 0 0 0.18rem;
+    font-size: 0.32rem;
+    color: #323333;
+    // line-height: 0.45rem;
+    word-break: break-all;
+    white-space: pre-wrap;
+    // word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  &__covers {
+    position: relative;
+    margin-left: -0.1rem;
+    overflow: hidden;
+
+    &__single {
+      float: left;
+      position: relative;
+      margin-left: 0.1rem;
+
+      .ks-image {
+        width: 4.2rem;
+        height: 2.55rem;
+      }
+
+      > img {
+        display: block;
+        max-width: 4.2rem;
+        max-height: 4.2rem;
+      }
+    }
+
+    &__mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 240, 254, 0.4) 0%, rgba(26, 151, 255, 0.4) 100%);
+      pointer-events: none;
+    }
+
+    &__item {
+      box-sizing: border-box;
+      float: left;
+      width: 33.3333%;
+      padding-left: 0.1rem;
+    }
+
+    &__rect {
+      position: relative;
+      padding-top: 100%;
+    }
+
+    &__inner {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      > div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0.6rem;
+      height: 0.6rem;
+      transform: translate(-50%, -50%);
+      background: url(../../assets/play_btn.png) no-repeat center;
+      background-size: contain;
+    }
+
+    &__count {
+      box-sizing: border-box;
+      position: absolute;
+      right: 0.12rem;
+      bottom: 0.12rem;
+      padding-left: 0.08 + 0.24 +0.05rem;
+      padding-right: 0.05rem;
+      min-width: 0.6rem;
+      height: 0.36rem;
+      background: rgba(#000, 0.4) url(../../assets/icon_img.png) no-repeat 0.08rem center;
+      background-size: 0.24rem;
+      font-size: 0.22rem;
+      color: #ffffff;
+      box-shadow: 0.03rem 0.03rem rgba(#000, 0.2);
+      pointer-events: none;
+    }
+  }
+
+  &__footer {
+    padding: 0.3rem 0 0.05rem;
+    display: flex;
+
+    &__battery,
+    &__msg,
+    &__share,
+    &__delete {
+      margin-right: 0.6rem;
+      padding-left: 0.5rem;
+      height: 0.44rem;
+      line-height: 0.44rem;
+      font-size: 0.26rem;
+      color: #969899;
+      background: no-repeat left center;
+      background-size: 0.44rem;
+    }
+
+    &__battery {
+      background-image: url(../../assets/icon_battery_nor.png);
+
+      &--active {
+        background-image: url(../../assets/icon_battery.png);
+      }
+    }
+
+    &__msg {
+      background-image: url(../../assets/icon_msg2.png);
+    }
+
+    &__share {
+      background-image: url(../../assets/icon_share3.png);
+    }
+
+    &__delete {
+      padding-left: 0;
+    }
+
+    &__location {
+      position: relative;
+      margin-left: auto;
+      box-sizing: border-box;
+      padding: 0 0.15rem;
+      min-width: 1.12rem;
+      height: 0.44rem;
+      border-radius: 0.44rem;
+      line-height: 0.44rem;
+      background: #f7f9fa;
+      color: #646566;
+      font-size: 0.26rem;
+      text-align: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -0.5rem;
+        width: 0.44rem;
+        height: 0.44rem;
+        background: url(../../assets/icon_location.png) no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+}

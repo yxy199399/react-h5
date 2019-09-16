@@ -1,0 +1,11 @@
+.ks-rec-answer {
+  &__more {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #1a97ff;
+    cursor: pointer;
+  }
+}

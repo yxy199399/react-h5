@@ -1,0 +1,170 @@
+@import '~quill/dist/quill.snow.css';
+
+html {
+  position: relative;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: calc(100vw / 7.5);
+  line-height: 1.5;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: calc(320px / 7.5);
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: calc(750px / 7.5);
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  background: #f7f9fa;
+}
+
+ul,
+li,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+textarea,
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+a[disabled] {
+  pointer-events: none;
+}
+
+[class*='prevent-scroll'] {
+  overflow: hidden;
+  height: 100vh;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+// modal
+html {
+  .am-modal-alert-content {
+    font-size: 0.32rem;
+    color: #646566;
+  }
+
+  .am-modal-transparent .am-modal-content {
+    border-radius: 0;
+  }
+
+  .am-modal-footer .am-modal-button {
+    height: 0.78rem;
+    line-height: 0.78rem;
+    font-size: 0.3rem;
+    color: #1a97ff;
+  }
+
+  .am-modal-button-group-h .am-modal-button:first-child {
+    color: #646566;
+  }
+}
+
+// tabs
+html {
+  .am-tabs-default-bar-tab {
+    font-weight: 400;
+    font-size: 0.32rem;
+    height: 0.78rem;
+    color: #969899;
+  }
+  .am-tabs-default-bar-tab-active {
+    color: #323333;
+  }
+
+  .am-tabs-default-bar-underline {
+    background: transparent;
+    border: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 0.42rem;
+      height: 0.06rem;
+      background: linear-gradient(90deg, #00f0fe, #1a97ff);
+    }
+  }
+
+  .am-list-body {
+    border: 0;
+  }
+}
+
+// picker
+.am-picker-popup-wrap {
+  width: 7.5rem;
+  margin: auto;
+}
+
+//订单提示样式
+.tips {
+  height: 1.8rem;
+  font-size: 0.3rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(50, 51, 51, 1);
+  line-height: 1.8rem;
+  .imp {
+    color: #1a97ffff;
+  }
+}
+
+// actionSheet
+html {
+  .am-action-sheet {
+    right: 0;
+    margin: auto;
+    width: 7.5rem;
+  }
+  .am-action-sheet-button-list-item {
+    box-sizing: border-box;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    color: #323333;
+    font-size: 0.36rem;
+    overflow-y: hidden;
+  }
+  .am-action-sheet-button-list .am-action-sheet-cancel-button {
+    border-top: 0;
+  }
+  .am-action-sheet-button-list .am-action-sheet-cancel-button-mask {
+    background: #f7f9fa;
+  }
+}

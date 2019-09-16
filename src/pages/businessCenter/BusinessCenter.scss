@@ -1,0 +1,208 @@
+.business-center{
+  .business-center__info__pt{
+    width: 100%;
+    height: 4.04rem;
+    background-image: url(../../assets/business_pt_bg.png);
+    background-size:cover;
+  }
+  .business-center__info__zy{
+    width: 100%;
+    height: 4.04rem;
+    background-image: url(../../assets/business_zy_bg.png);
+    background-size:cover;
+  }
+  .ks-headerbar{
+    background: none;
+    color: #FFFFFF;
+  }
+  .business-center__info__card{
+    margin-top: 0.4rem;
+    .business-center__info__card__top{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .list_division {
+        width: 0.02rem;
+        height: 0.54rem;
+        background:rgba(255,255,255,1);
+        opacity:0.5;
+        margin: 0 0.05rem;
+      }
+      .card__left{
+        margin-left: 0.5rem;
+        width: 0.6rem;
+        .card__box{
+          width: 100%;
+          .card__box__num{
+            margin: 0;
+            width: 100%;
+            height:0.47rem;
+            font-size:0.4;
+            font-family:DINMittelschrift;
+            color:rgba(255,255,255,1);
+            line-height:0.47rem;
+            text-align: center;
+          }
+          .card__box__type{
+            width: 100%;
+            margin-top: 0.04rem;
+            margin-bottom: 0;
+            height:0.28rem;
+            font-size:0.2rem;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:0.28rem;
+            text-align: center;
+          }
+        }
+      }
+      .card__center{
+        .card__avator{
+          .business_avatar{
+            width: 1.2rem;
+            height: 1.2rem;
+            margin: 0 auto;
+            position: relative;
+            .business_avatar_box_maj{
+              width: 1.2rem;
+              height: 1.2rem;
+              border-radius: 50%;
+              background-image: linear-gradient(to bottom ,#F76B1CFF , #FAD961FF);
+              .business_avatar_img_maj{
+                width: 1.1rem;
+                height: 1.1rem;
+                border-radius: 50%;
+                margin:0.05rem;
+              }
+              .business_avatar_icon{
+                width: 0.48rem;
+                height: 0.48rem;
+                position: absolute;
+                bottom: -0.2rem;
+                left:0.35rem;
+              }
+            }
+            .business_avatar_box_ord{
+              width: 1.2rem;
+              height: 1.2rem;
+              border-radius: 50%;
+              background-image: linear-gradient(to bottom ,#C0D9F0FF , #C0D9F0FF);
+              .business_avatar_img_maj{
+                width: 1.1rem;
+                height: 1.1rem;
+                border-radius: 50%;
+                margin:0.05rem;
+              }
+              .business_avatar_icon{
+                width: 0.48rem;
+                height: 0.48rem;
+                position: absolute;
+                bottom: -0.2rem;
+                left:0.35rem;
+              }
+            }
+          }
+        }
+      }
+      .card__right{
+        margin-right: 0.5rem;
+        width: 0.6rem;
+        .card__box{
+          width: 100%;
+          .card__box__num{
+            width: 100%;
+            margin: 0;
+            height:0.47rem;
+            font-size:0.4;
+            font-family:DINMittelschrift;
+            color:rgba(255,255,255,1);
+            line-height:0.47rem;
+            text-align: center;
+            span{
+              margin: 0;
+              height:0.28rem;
+              font-size:0.2rem;
+              font-family:PingFangSC-Regular;
+              font-weight:400;
+              color:rgba(255,255,255,1);
+              line-height:0.28rem;
+              text-align: center;
+            }
+          }
+          .card__box__type{
+            width: 100%;
+            margin-top: 0.04rem;
+            margin-bottom: 0;
+            height:0.28rem;
+            font-size:0.2rem;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height:0.28rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .business-center__info__name{
+      height:0.48rem;
+      font-size:0.34rem;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      line-height:0.48rem;
+      margin: 0.12rem 0 0;
+      text-align: center;
+    }
+    .business-center__info__autograph{
+      height:0.3rem;
+      font-size:0.22rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:0.3rem;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .business-center__nav{
+    width: 7.02rem;
+    margin: 0 0.24rem;
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    top:3.6rem;
+    box-shadow:0px 4px 12px 0px rgba(225,227,230,0.4);
+    .business-center__nav__list{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 0.92rem;
+      .icon_img{
+        width: 0.42rem;
+        height: 0.42rem;
+        margin: 0 0.18rem 0 0.14rem;
+      }
+      .business-center__nav__list__left{
+        border-bottom: 0.01rem solid rgba(235,237,240,1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        span{
+          font-size: 0.3rem;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(100,101,102,1);
+        }
+        img{
+          width: 0.38rem;
+          height: 0.38rem;
+          margin-right: 0.18rem;
+        }
+      }
+    }
+  }
+}

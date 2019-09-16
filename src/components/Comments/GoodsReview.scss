@@ -1,0 +1,86 @@
+.ks-goods-review {
+  padding-top: 0.24rem;
+  margin-left: 0.16rem;
+  padding-bottom: 0.24rem;
+  border-bottom: 1px solid #ebedf0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.12rem;
+    min-height: 0.37rem;
+
+    &__bar {
+      position: absolute;
+      top: 50%;
+      left: -0.16rem;
+      transform: translate(0, -50%);
+    }
+
+    &__nick {
+      position: relative;
+      font-size: 0.26rem;
+      color: #353535;
+      font-weight: 500;
+    }
+    &__date {
+      font-size: 0.24rem;
+      color: #969899;
+      margin-right: auto;
+    }
+  }
+
+  &__body {
+    margin-bottom: 0.18rem;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+  }
+
+  &__album {
+    position: relative;
+    margin-left: -0.12rem;
+    overflow: hidden;
+
+    &__item {
+      box-sizing: border-box;
+      float: left;
+      width: 25%;
+      padding-left: 0.12rem;
+    }
+
+    &__rect {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__count {
+      position: absolute;
+      right: 0.1rem;
+      bottom: 0.1rem;
+      padding-left: 0.08 + 0.24 +0.05rem;
+      padding-right: 0.05rem;
+      min-width: 0.6rem;
+      height: 0.36rem;
+      background: rgba(#000, 0.4) url(../../assets/icon_img.png) no-repeat 0.08rem center;
+      background-size: 0.24rem;
+      font-size: 0.22rem;
+      color: #ffffff;
+      box-shadow: 0.03rem 0.03rem rgba(#000, 0.2);
+      pointer-events: none;
+    }
+  }
+}

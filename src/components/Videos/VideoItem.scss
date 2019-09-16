@@ -1,0 +1,107 @@
+@import '../../mixin';
+
+.ks-video-item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  padding: 0.18rem 0;
+  border-bottom: 1px solid #f1f0f3;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__cover {
+    flex-shrink: 0;
+    position: relative;
+    width: 3.06rem;
+    height: 1.72rem;
+    margin-right: 0.26rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, rgba(112, 244, 254, 1) 0%, rgba(19, 173, 255, 1) 100%);
+    }
+    &__isCourse{
+      width: 0.6rem;
+      height: 0.35rem;
+      background:linear-gradient(225deg,rgba(0,242,254,1) 0%,rgba(26,148,255,1) 100%);
+      opacity:0.8;
+      font-size: 0.22rem;
+      color:#fff;
+      position: absolute;
+      z-index: 1;
+      top:0.12rem;
+      left:0.12rem;
+      text-align: center;
+      line-height: 0.35rem;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__date {
+      position: absolute;
+      right: 0.2rem;
+      bottom: 0.15rem;
+      color: #ffffff;
+      font-size: 0.2rem;
+      background:rgba(0,0,0,0.6);
+      width: 0.72rem;
+      height: 0.31rem;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0.05rem 0 0;
+    font-size: 0.28rem;
+    color: #646566;
+    font-weight: normal;
+
+    @include ellipsis(2, 0.49rem);
+  }
+
+  &__meta {
+    display: flex;
+    padding-bottom: 0.12rem;
+  }
+
+  &__nick {
+    margin-right: auto;
+    font-size: 0.24rem;
+    color: #969799;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__views {
+    padding: 0 0.15rem 0 0.3rem;
+    font-size: 0.22rem;
+    color: #c8cacc;
+    background: url(../../assets/icon_eye_dark.png) no-repeat left center;
+    background-size: 0.23rem;
+  }
+  &__date {
+    padding: 0 0.15rem 0 0.3rem;
+    font-size: 0.22rem;
+    color: #c8cacc;
+    background: url(../../assets/icon_date.png) no-repeat left center;
+    background-size: 0.23rem;
+  }
+}

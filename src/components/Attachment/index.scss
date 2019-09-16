@@ -1,0 +1,59 @@
+@import '../../mixin';
+
+.ks-attachment {
+  &__list {
+    margin: -0.18rem -0.18rem 0 0;
+  }
+
+  &__item {
+    float: left;
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 0.18rem 0.18rem 0 0;
+  }
+
+  &__rect {
+    position: relative;
+    padding-top: 100%;
+    cursor: pointer;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: pink;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__file {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e1e3e6;
+    padding: 0.2rem;
+
+    > img {
+      display: block;
+      margin: 14% auto 7%;
+      width: 44%;
+      height: 44%;
+    }
+
+    > span {
+      @include ellipsis(2, 0.3rem);
+      font-size: 0.22rem;
+      color: #323333;
+      text-align: center;
+      word-break: break-all;
+    }
+  }
+}

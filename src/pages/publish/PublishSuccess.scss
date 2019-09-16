@@ -1,0 +1,39 @@
+.publish-success {
+  background: #fff;
+  min-height: 100vh;
+
+  &__icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1.76rem auto 0.24rem;
+    background: url(../../assets/icon_circle_succ.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__title {
+    margin: 0 0 0.3rem;
+    font-size: 0.4rem;
+    color: #1a97ff;
+    text-align: center;
+  }
+
+  &__info {
+    margin: 0 0 0.9rem;
+    font-size: 0.28rem;
+    color: #646566;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    width: 6.7rem;
+    height: 0.94rem;
+    line-height: 0.94rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+  }
+}

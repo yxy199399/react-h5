@@ -1,0 +1,153 @@
+@import 'src/mixin';
+
+.ks-drawer {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // margin: auto;
+  // width: 7.5rem;
+
+  &__mask {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &__body {
+    transition: transform 0.3s;
+  }
+
+  &__side {
+    z-index: 102;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 7.5rem;
+    pointer-events: none;
+    overflow: hidden;
+
+    &__in {
+      position: absolute;
+      left: -6rem;
+      pointer-events: auto;
+      width: 6rem;
+      height: 100%;
+      overflow-y: auto;
+      transform: translate(0, 0);
+      transition: transform 0.3s;
+      background: #f7f9fa;
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      height: 1.38rem;
+      padding: 0 0.24rem;
+      background: linear-gradient(135deg, #00f0fe, #1a97ff);
+
+      &__avatar {
+        flex-shrink: 0;
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 0.12rem;
+      }
+
+      &__info {
+        min-width: 0;
+        flex: 1;
+      }
+
+      &__nick {
+        @include ellipsis;
+        font-size: 0.32rem;
+        color: #ffffff;
+        font-weight: 500;
+        line-height: 0.45rem;
+      }
+
+      &__meta {
+        display: block;
+        @include ellipsis;
+        font-size: 0.24rem;
+        line-height: 0.33rem;
+        color: #ffffff;
+      }
+    }
+
+    &__nav {
+      margin-bottom: 0.12rem;
+
+      &__item {
+        position: relative;
+        display: flex;
+        padding: 0 0.18rem;
+        align-items: center;
+        text-decoration: none;
+        height: 0.93rem;
+        background: #ffffff;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0.42rem + 0.18rem + 0.12rem;
+          right: 0;
+          bottom: 0;
+          height: 1px;
+          background: #f7f9fa;
+        }
+
+        &:last-child::after {
+          display: none;
+        }
+      }
+
+      img {
+        width: 0.42rem;
+        height: 0.42rem;
+        margin-right: 0.12rem;
+      }
+
+      span {
+        flex: 1;
+        color: #323333;
+        font-size: 0.3rem;
+      }
+
+      i {
+        margin-left: 0.12rem;
+        width: 0.38rem;
+        height: 0.38rem;
+        background: url(../../assets/icon_arrow.png) no-repeat center;
+        background-size: cover;
+        transform: rotate(-90deg);
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.ks-drawer--open {
+  .ks-drawer__mask {
+    opacity: 1;
+    visibility: visible;
+  }
+  .ks-drawer__body {
+    transform: translate(6rem, 0);
+  }
+  .ks-drawer__side__in {
+    transform: translate(6rem, 0);
+  }
+}

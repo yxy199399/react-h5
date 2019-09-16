@@ -1,0 +1,408 @@
+.shop-con{
+  &-gallery{
+    width: 100%;
+    height: 7.8rem;
+  }
+  &-title{
+    background: #fff;
+    padding: 0.3rem;
+    .price{
+      margin-top: 0;
+      span{
+        font-size:0.26rem;
+        font-family:PingFangSC;
+        font-weight:500;
+        color:rgba(255,71,51,1);
+        line-height:0.37rem;
+      }
+      font-size:0.44rem;
+      font-family:DINMittelschrift;
+      color:rgba(255,71,51,1);
+      line-height:0.51rem;
+      letter-spacing:0.01rem;
+    }
+
+    h1{
+      font-size:0.32rem;
+      font-family:PingFangSC;
+      font-weight:500;
+      color:rgba(50,51,51,1);
+      line-height:0.45rem;
+      letter-spacing:0.01rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .footer{
+      &:after{
+        content:"";
+        visibility:hidden;
+        display:block;
+        height:0;
+        clear:both;
+      }
+    .freight{
+      font-size:0.26rem;
+      font-family:PingFangSC;
+      font-weight:400;
+      color:rgba(100,101,102,1);
+      line-height:0.37rem;
+      float: left;
+    }
+    .salesVolume{
+      font-size:0.24rem;
+      font-family:PingFangSC;
+      font-weight:400;
+      color:rgba(175,177,179,1);
+      line-height:0.33rem;
+      float: right;
+    }
+}
+}
+  .hd{
+    height: 1.06rem;
+    background: url(../../assets/hd.png) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    display: flex;
+
+    color:rgba(255,255,255,1);
+    .left{
+      display: flex;
+      padding:0  0.3rem ;
+      div{
+        font-size:0.50rem;
+        font-family:DINMittelschrift;
+        letter-spacing:1px;
+        line-height: 1.06rem;
+        margin-left: 0.14rem;
+        text-align: center;
+        i{
+          font-size:0.26rem;
+          font-family:PingFangSC;
+          font-weight:500;
+          font-style:normal
+        }
+        .Original{
+          font-size:0.22rem;
+          font-family:PingFangSC;
+          font-weight:400;
+          margin: 0;
+          margin-top: 0.23rem;
+          line-height: normal;
+          text-decoration: line-through;
+        }
+        .hdprice{
+          font-size:0.18rem;
+          font-family:PingFangSC;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          background:rgba(179,50,36,1);
+          border-radius:14px;
+          padding: 0.02rem 0.08rem ;
+          line-height: normal;
+          position: relative;
+          top: -0.44rem;
+        }
+      }
+    }
+    .right{
+      p{
+        margin: 0;
+        font-size:0.24rem;
+        font-family:PingFangSC;
+        font-weight:500;
+        line-height:0.33rem;
+        margin-top: 0.15rem;
+      }
+      .time{
+        font-size:0.22rem;
+        font-family:PingFangSC;
+        font-weight:400;
+        margin-top: 0.1rem;
+        span{
+          font-size:0.25rem;
+          font-family:DINMittelschrift;
+          line-height:0.29rem;
+          padding: 0.06rem;
+          background:rgba(0,0,0,0.4);
+          border-radius:6px;
+          margin:  0 0.06rem;
+        }
+      }
+    }
+    .shu{
+      width:1px;
+      height:0.3rem;
+      background:rgba(255,255,255,1);
+      display: block;
+      margin-top: 0.4rem;
+      margin-right: 0.24rem;
+    }
+  }
+  &-specification{
+    display: flex;
+    margin-top: 0.18rem;
+    padding: 0.3rem;
+    background: #fff;
+    font-family:PingFangSC;
+    font-weight:400;
+    align-items: center;
+    div{
+      font-size:0.26rem;
+      color:rgba(50,51,51,1);
+    }
+    .select{
+      width: 10%;
+      font-weight:500;
+    }
+    .chosen{
+      width: 70%;
+    }
+    p{
+      font-size:0.24rem;
+      color:rgba(200,202,204,1);
+      line-height:0.33rem;
+      margin: 0;
+      width: 20%;
+      text-align: right;
+      img{
+        width: 0.24rem;
+        height: 0.24rem;
+        float: right;
+        margin-top: 0.04rem;
+      }
+    }
+  }
+  &-merchant{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 0.3rem;
+    margin-top: 0.18rem;
+    .left{
+      flex: 1;
+      .name{
+        display: flex;
+        align-items: center;
+        .nameTitle{
+          font-size:0.30rem;
+          font-family:PingFangSC;
+          font-weight:500;
+          color:rgba(50,51,51,1);
+          line-height:0.42rem;
+          margin-right: 0.42rem;
+        }
+        span{
+          font-size:0.24rem;
+          font-family:PingFangSC;
+          font-weight:400;
+          color:rgba(150,152,153,1);
+          line-height:0.33rem;
+          padding-left: 0.05rem;
+        }
+      }
+      .title{
+        font-size:0.26rem;
+        font-family:PingFangSC;
+        font-weight:400;
+        color:rgba(150,152,153,1);
+        line-height:0.37rem;
+        padding-top: 0.07rem;
+      }
+    }
+    .right{
+      img{
+        width:0.24rem;
+        height:0.24rem;
+      }
+    }
+  }
+  &-evaluation{
+    background: #fff;
+    padding: 0.3rem;
+    margin-top: 0.18rem;
+    .header{
+      border-bottom: 1px solid #F7F9FA;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 0.24rem;
+      .name{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        .nameTitle{
+          font-size:0.28rem;
+          font-family:PingFangSC;
+          font-weight:400;
+          color:rgba(50,51,51,1);
+          line-height:0.42rem;
+          margin-right: 0.12rem;
+        }
+        span{
+          font-size:0.24rem;
+          font-family:PingFangSC;
+          font-weight:400;
+          color:rgba(150,152,153,1);
+          line-height:0.33rem;
+          padding-left: 0.05rem;
+        }
+      }
+      .more{
+        font-size:0.24rem;
+        font-family:PingFangSC;
+        font-weight:400;
+        color:rgba(150,152,153,1);
+        line-height:0.33rem;
+        width: 40%;
+        text-align: right;
+        img{
+          width:0.24rem;
+          height:0.24rem;
+          float: right;
+          margin-top: 0.04rem;
+        }
+      }
+    }
+    .seeMore{
+      font-size:0.26rem;
+      font-family:PingFangSC;
+      font-weight:400;
+      color:rgba(26,151,255,1);
+      line-height:0.37rem;
+      text-align: center;
+      padding-top: 0.24rem;
+    }
+    .empty{
+      $h: 2.14rem;
+      margin: 0;
+      padding-top: 3.2rem;
+      padding-bottom: 0.8rem;
+      background: url(../../assets/empty.png) no-repeat center 0.8rem;
+      background-size: 3.2rem auto;
+      text-align: center;
+      font-size: 0.26rem;
+      color: #646566;
+    }
+  }
+  &-tab{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-top: 0.18rem;
+    div{
+      flex: 1;
+      border-right: 1px solid #F7F9FA;
+      height:0.42rem;
+      font-size:0.30rem;
+      font-family:PingFangSC;
+      font-weight:400;
+      color:rgba(100,101,102,1);
+      line-height:0.42rem;
+      padding: 0.20rem 0;
+      text-align: center;
+    }
+    &:last-child{
+      border-right: none;
+    }
+    .active{
+      color:rgba(26,151,255,1);
+    }
+  }
+  &-content{
+    background: #fff;
+    padding: 0.3rem;
+    img{
+      width: 100%;
+    }
+  }
+  .likeListCard{
+    margin: 0;
+    margin-top: 0.24rem;
+  }
+  &-likeList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0.05rem 0.06rem 0;
+    padding-bottom: 1rem;
+    a{
+      width: 50%;
+      .cover{
+        height: 3.42rem;
+        margin-bottom: 0.12rem;
+      }
+      h4{
+        margin: 0 0 0.12rem;
+        height: 0.37rem;
+        line-height: 0.37rem;
+        color: #323333;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      div{
+        height: 0.45rem;
+        line-height: 0.45rem;
+        color: #ff6f00;
+        font-size: 0.32rem;
+
+        &::first-letter {
+          font-size: 0.22rem;
+        }
+      }
+    }
+  }
+  &-footer{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    text-align: center;
+    background: #fff;
+    div{
+      width: 25%;
+      font-size:0.22rem;
+      font-family:PingFangSC;
+      font-weight:400;
+      color:rgba(150,152,153,1);
+      line-height:0.30rem;
+      i{
+        width: 0.40rem;
+        height: 0.40rem;
+
+        display: block;
+        position: relative;
+        left: 50%;
+        margin-left: -0.2rem;
+      }
+      .car{
+        background: url(../../assets/icon_shopping.png) no-repeat center;
+        background-size: contain;
+      }
+      .share{
+        background: url(../../assets/icon_share_default.png) no-repeat center;
+        background-size: contain;
+      }
+    }
+    .addCar{
+      height: 100%;
+      background:linear-gradient(90deg,rgba(250,156,28,1) 0%,rgba(250,173,20,1) 100%);
+    }
+    .gopay{
+      height: 100%;
+      background:linear-gradient(270deg,rgba(255,90,87,1) 0%,rgba(255,71,51,1) 100%);
+    }
+    .font{
+      line-height: 0.98rem;
+      font-size:0.28rem;
+      font-family:PingFangSC;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+    }
+  }
+}

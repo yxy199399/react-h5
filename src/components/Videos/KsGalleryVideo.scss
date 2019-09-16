@@ -1,0 +1,37 @@
+.ks-gallery-video {
+  position: relative;
+  height: 4.2rem;
+
+  .am-carousel,
+  .slider-frame,
+  .slider-list,
+  .slider-slide,
+  .ks-image {
+    height: 100% !important;
+  }
+
+  &__pager {
+    position: absolute;
+    left: 0.24rem;
+    bottom: 0.24rem;
+    padding: 0 0.1rem;
+    min-width: 0.84rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(#000, 0.4);
+    font-size: 0.26rem;
+  }
+
+  &__play {
+    position: absolute;
+    right: 0.24rem;
+    bottom: 0.24rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(../../assets/play_btn.png) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+  }
+}

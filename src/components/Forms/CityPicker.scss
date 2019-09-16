@@ -1,0 +1,139 @@
+@import 'src/mixin';
+
+.city-picker {
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  top: 0.88 + 0.88rem;
+  bottom: 0.98rem;
+  width: 7.5rem;
+  background: #f7f9fa;
+
+  &__crt {
+    display: flex;
+    align-items: center;
+    padding: 0 0.24rem;
+    margin-bottom: 0.12rem;
+    height: 0.92rem;
+    background: #ffffff;
+
+    &__icon {
+      margin-right: 0.12rem;
+      width: 0.36rem;
+      height: 0.36rem;
+      background: url(../../assets/icon_location.png) no-repeat center;
+      background-size: contain;
+    }
+
+    &__name {
+      font-size: 0.32rem;
+      color: #323333;
+    }
+
+    &__tip {
+      margin-left: 0.12rem;
+      font-size: 0.2rem;
+      color: #c8cacc;
+    }
+
+    &__refresh {
+      margin-left: auto;
+      padding-left: 0.4rem;
+      font-size: 0.28rem;
+      color: #969899;
+      font-style: normal;
+      background: url(../../assets/icon_refresh.png) no-repeat left center;
+      background-size: 0.28rem;
+    }
+  }
+
+  &__scroll {
+    position: relative;
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &__chars {
+    position: absolute;
+    top: 50%;
+    right: 0.06rem;
+    transform: translate(0, -50%);
+
+    li {
+      color: #c8cacc;
+      font-size: 0.2rem;
+      width: 0.4rem;
+      height: 0.3rem;
+      line-height: 0.4rem;
+      text-align: center;
+    }
+  }
+
+  &__hot {
+    background: #ffffff;
+    margin-bottom: -0.24rem;
+
+    &__title {
+      padding: 0.16rem;
+      font-size: 0.24rem;
+      color: #c8cacc;
+    }
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0 0 0.1rem 0.48rem;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      box-sizing: border-box;
+      margin: 0 0.24rem 0.24rem 0;
+      padding: 0 0.1rem;
+      width: 1.96rem;
+      height: 0.72rem;
+      line-height: 0.72rem;
+      background: #f7f9fa;
+      color: #646566;
+      font-size: 0.26rem;
+      text-align: center;
+      @include ellipsis;
+
+      &--active {
+        background: #e1e3e6;
+      }
+    }
+  }
+
+  &__citys {
+    background: #ffffff;
+
+    &__char {
+      padding: 0.3rem 0 0 0.24rem;
+      line-height: 0.37rem;
+      font-size: 0.26rem;
+      color: #646566;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 0 0.3rem 0 0.48rem;
+      height: 0.84rem;
+      border-top: 1px solid #f7f9fa;
+      font-size: 0.26rem;
+      color: #646566;
+
+      &:last-child {
+        border-bottom: 1px solid #f7f9fa;
+      }
+    }
+  }
+}

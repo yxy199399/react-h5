@@ -1,0 +1,54 @@
+.page-activity {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 0.88rem);
+}
+
+.city_title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 100%;
+  padding-right: 0.24rem;
+
+  >img {
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-right: 0.06rem;
+  }
+}
+
+
+.header-tabs {
+
+  &__item {
+    width: 1.2rem;
+    height: 0.5rem;
+    color: #FFFFFF;
+    font-size: 0.28rem;
+    outline: none;
+    // padding: 0.03rem 0.16rem;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+
+    &.active {
+      color: #10BCFF;
+      background: #FFFFFF;
+    }
+  }
+
+  &__activity {
+    border-right: none;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  &__service {
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+}

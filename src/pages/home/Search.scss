@@ -1,0 +1,70 @@
+@import 'src/mixin';
+
+.search-hots {
+  // padding: 0.33rem 0 0 0;
+  background: #ffffff;
+
+  &__title {
+    margin: 0 0.24rem;
+    padding: 0.3rem 0.52rem;
+    font-size: 0.34rem;
+    color: #323333;
+    font-weight: 500;
+    background: url(../../assets/icon_fire2.png) no-repeat left center;
+    background-size: 0.42rem;
+  }
+
+  &__body {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0.24rem;
+      margin: auto;
+      border-right: 1px solid #d8d8d8;
+    }
+
+    &__item {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 0.24rem;
+      @include ellipsis;
+      font-size: 0.28rem;
+      color: #323333;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      margin-bottom: 0.24rem;
+    }
+  }
+}
+
+.search-autocomplete {
+  &__item {
+    display: block;
+    margin: 0 0.22rem 0 0.26rem;
+    padding: 0.22rem 0 0.22rem 0.42rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    // #FF4D4F
+    color: #646566;
+    border-bottom: 1px solid #edeff0;
+    @include ellipsis;
+    background: url(../../assets/iocn_search_nor.png) no-repeat left center;
+    background-size: 0.3rem;
+
+    em {
+      font-style: normal;
+      color: #ff4d4f;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

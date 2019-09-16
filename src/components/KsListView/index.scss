@@ -1,0 +1,63 @@
+.ks-listview {
+  &__card {
+    display: block;
+    margin: 0.24rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0;
+    font-size: 0.24rem;
+    color: #969899;
+
+    &__empty {
+      width: 100%;
+      padding-top: 3.2rem;
+      padding-bottom: 0.8rem;
+      background: url(../../assets/empty.png) no-repeat center 0.8rem;
+      background-size: 3.2rem auto;
+      text-align: center;
+      font-size: 0.26rem;
+      color: #646566;
+    }
+
+    &__loading {
+      width: 0.32rem;
+      height: 0.32rem;
+      margin-right: 0.24rem;
+      background: url(../../assets/icon_loading.png) no-repeat center;
+      background-size: contain;
+      animation: cirle-anim 1s linear infinite;
+      // animation: foo steps(8, end) 1s infinite;
+    }
+
+    &__logo {
+      width: 1.3rem;
+      height: 0.32rem;
+      background: url(../../assets/img_loading.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+
+.ks-listview {
+  .am-list-view-scrollview-content {
+    width: 100%;
+  }
+
+  .am-list-body {
+    background: transparent;
+
+    &::before,
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .am-list-header,
+  .am-list-footer {
+    padding: 0;
+  }
+}

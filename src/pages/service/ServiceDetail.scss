@@ -1,0 +1,267 @@
+.service-info {
+
+  &__price {
+    padding: 0.24rem 0.24rem 0;
+    background: #FFF;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 0.24rem;
+      border-bottom: 1px solid #EBEDF0;
+
+      &__shelf {
+        color: #FF6F00;
+        font-size: 0.2rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+
+        &__title {
+          color: #646566;
+        }
+
+        &__specific {
+          margin-left: 0.12rem;
+          font-size: 0.4rem;
+
+          &__symbol {
+            font-size: 0.2rem;
+          }
+        }
+      }
+
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.07rem 0.16rem;
+        border: none;
+        outline: none;
+        user-select: none;
+        color: #FFF;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        background: linear-gradient(90deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+
+        &__img {
+          width: 0.3rem;
+          height: 0.3rem;
+          margin-right: 0.06rem;
+          background: url('../../assets/icon_mobile_white.png') 0 0 no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  &__title {
+    padding: 0.3rem 0.24rem;
+    background: #FFF;
+
+    &__txt {
+      color: #323333;
+      font-size: 0.36rem;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+    }
+
+    &__tags {
+      margin-top: 0.18rem;
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.24rem 0;
+    padding: 0.24rem;
+    background: #FFF;
+
+    &__detail {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__symbol {
+        width: 0.42rem;
+        height: 0.42rem;
+        margin-right: 0.18rem;
+        background: url('../../assets/icon_location.png') 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      &__txt {
+        color: #323333;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        word-break: break-all;
+        word-wrap: wrap;
+      }
+    }
+
+    &__line {
+      width: 1px;
+      height: 0.64rem;
+      margin: 0 0.35rem;
+      background: #EBEDF0;
+    }
+
+    &__copy {
+      user-select: none;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      &__img {
+        width: 0.36rem;
+        height: 0.36rem;
+        margin: auto !important;
+        background: url('../../assets/icon_copy.png') 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      &__txt {
+        color: #C8CACC;
+        font-size: 0.22rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        margin-top: 0.06rem;
+      }
+    }
+  }
+
+  &__details {
+    padding: 0.24rem 0;
+    background: #FFF;
+
+    &__txt {
+      padding: 0 0.24rem;
+      margin-bottom: 0.24rem;
+    }
+  }
+
+  &__merchant {
+    padding: 0.24rem;
+    background: #FFF;
+
+    &__item {
+
+      &:not(:first-child) {
+        margin-top: 0.3rem;
+      }
+
+      &__title {
+        color: #1A97FF;
+        font-size: 0.28rem;
+        margin: 0;
+        padding: 0;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+      }
+
+      &__name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.12rem;
+
+        &__txt {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          color: #323333;
+          font-size: 0.28rem;
+          font-family: PingFangSC-Medium;
+          font-weight: 500;
+
+          &__symbol {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-left: 0.09rem;
+            background: url('../../assets/icon_kip_sel.png') 0 0 no-repeat;
+            background-size: contain;
+
+            &.normal {
+              background: url('../../assets/icon_kip_nor.png') 0 0 no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+
+        &__score {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          &__title {
+            color: #969899;
+            font-size: 0.2rem;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            margin-right: 0.12rem;
+          }
+        }
+      }
+
+      &__introduce {
+        margin-top: 0.12rem;
+        color: #646566;
+        font-size: 0.28rem;
+        word-break: break-all;
+        word-wrap: wrap;
+      }
+
+      &__pic {
+        height: 3.95rem;
+        margin-top: 0.18rem;
+        position: relative;
+
+        &__cover {
+          height: 100%;
+        }
+
+        &__num {
+          position: absolute;
+          right: 0.21rem;
+          bottom: 0.21rem;
+          width: 0.6rem;
+          height: 0.36rem;
+          color: #FFF;
+          font-size: 0.22rem;
+          padding-left: 0.08 + 0.24 +0.05rem;
+          padding-right: 0.05rem;
+          background: rgba(#000, 0.4) url(../../assets/icon_img.png) no-repeat 0.08rem center;
+          background-size: 0.24rem;
+          box-shadow: 0.03rem 0.03rem rgba(#000, 0.2);
+        }
+      }
+
+      &__detail {
+        color: #646566;
+        font-size: 0.28rem;
+        margin-top: 0.12rem;
+      }
+    }
+  }
+
+  &__comment {
+    background: #FFF;
+  }
+
+  &__attention {
+    padding: 0.24rem;
+    background: #FFF;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

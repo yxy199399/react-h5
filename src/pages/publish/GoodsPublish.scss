@@ -1,0 +1,45 @@
+// 单价库存
+.goods-publish__row {
+  .publish-item__extra {
+    font-size: 0.28rem;
+    color: #323333;
+  }
+  .publish-item__field {
+    width: 0;
+    text-align: right;
+
+    &--orange {
+      color: #ff6f00;
+    }
+  }
+}
+
+// 视频上传
+.goods-publish__video {
+  padding: 0 0 0.24rem;
+  > div {
+    flex: 1;
+    background: #f7f9fa;
+  }
+}
+
+// 图片展示
+.goods-publish__cover {
+  .ks-file-picker__plus {
+    width: 0.42rem;
+    height: 0.42rem;
+    background: url(../../assets/icon_img2.png) no-repeat center;
+    background-size: contain;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.publish-item__textarea {
+  &::placeholder {
+    color: #c8cacc;
+  }
+}

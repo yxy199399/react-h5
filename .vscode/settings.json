@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true
+}

@@ -1,0 +1,196 @@
+.shopping-cart {
+
+  .edit-button {
+    color: #FFF;
+    font-size: 0.3rem;
+    margin-right: 0.24rem;
+  }
+
+  .shopping-cart__list {
+    padding: 0.24rem 0 1.14rem;
+
+    .shopping-item {
+      background: #FFF;
+      padding: 0 0.3rem;
+
+      .shopping-card {
+
+        &:last-child {
+          .shopping-card__main {
+            border-bottom: none
+          }
+
+          .shopping-card__out-line {
+            border: none;
+          }
+
+          .shopping-card__inner-line {
+            display: block;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0.18rem;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 0.78rem;
+        border-bottom: 1px solid #F0F3F5;
+
+        &__select {
+          width: 0.36rem;
+          height: 0.36rem;
+          border-radius: 50%;
+          border: 1px solid #C8CACC;
+          margin-right: 0.24rem;
+          box-sizing: border-box;
+        }
+
+        &__txt {
+          color: #323333;
+          font-size: 0.28rem;
+          font-family: PingFangSC-Regular;
+          font-weight: 500;
+        }
+
+        &__symbol {
+          width: 0.42rem;
+          height: 0.42rem;
+          margin-left: 0.12rem;
+        }
+
+        &__normal {
+          background: url('../../../src/assets/icon_kip_nor.png') 0 0 no-repeat;
+          background-size: contain;
+        }
+
+        &__specialty {
+          background: url('../../../src/assets/icon_kip_sel.png') 0 0 no-repeat;
+          background-size: contain;
+        }
+
+        &__icon {
+          width: 0.38rem;
+          height: 0.38rem;
+          margin-left: 0.24rem;
+        }
+      }
+    }
+  }
+
+  .shopping-cart__list__empty {
+    width: 100%;
+    height: calc(100vh - 1.85rem);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+      width: 3.6rem;
+      height: 2.4rem;
+      background: url("../../assets/empty.png") 0 0 no-repeat;
+      background-size: contain;
+    }
+
+    &__txt {
+      width: 100%;
+      color: #646566;
+      font-size: 0.26rem;
+      text-align: center;
+      letter-spacing: 0.02rem;
+      margin: 0.4rem 0 0;
+    }
+  }
+
+  .shopping-cart__overview {
+    width: calc(100% - 0.24rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 0.96rem;
+    background: #FFF;
+    padding-left: 0.24rem;
+    z-index: 4;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__select {
+        width: 0.36rem;
+        height: 0.36rem;
+        border-radius: 50%;
+        border: 1px solid #C8CACC;
+        box-sizing: border-box;
+        margin-right: 0.18rem;
+      }
+
+      &__txt {
+        color: #969899;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__total {
+
+        &__txt {
+          color: #323333;
+          font-size: 0.26rem;
+          font-family: PingFangSC-Regular;
+        }
+
+        &__price {
+          color: #FF4733;
+          font-size: 0.4rem;
+          font-family: PingFangSC-Medium;
+          margin-left: 0.24rem;
+
+          .price_symbol {
+            font-size: 0.26rem;
+          }
+        }
+      }
+
+      &__button {
+        width: 1.92rem;
+        height: 0.96rem;
+        margin-left: 0.24rem;
+        background: #D8D8D8;
+        color: #969899;
+        font-size: 0.34rem;
+        font-family: PingFangSC-Regular;
+        line-height: 0.96rem;
+        text-align: center;
+
+
+      }
+
+      .active {
+        color: #FFF;
+        background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+      }
+    }
+  }
+
+  .selected {
+    background: url("../../assets/icon_radio_sel.png") 0 0 no-repeat;
+    background-size: cover;
+    border: none !important;
+  }
+}

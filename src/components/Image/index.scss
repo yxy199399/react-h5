@@ -1,0 +1,45 @@
+.ks-image {
+  position: relative;
+
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  &--cover {
+    background: no-repeat center;
+    background-size: cover;
+  }
+
+  &--contain {
+    background: no-repeat center;
+    background-size: contain;
+  }
+
+  &--contain-left {
+    background: no-repeat left center;
+    background-size: contain;
+  }
+
+  // &--success {
+
+  // }
+
+  &--loading,
+  &--error {
+    background: #ebedf0 no-repeat center;
+    background-size: 1.5rem auto;
+  }
+
+  &--loading {
+    background-image: url(../../assets/img_loading.png);
+  }
+
+  &--error {
+    background-image: url(../../assets/img_error.png);
+  }
+}

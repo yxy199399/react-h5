@@ -1,0 +1,417 @@
+
+.upload-question__body{
+  background:#FFF;
+  border-bottom:1px solid #EBEDF0;
+
+  &__category{
+    height:1.02rem;
+    padding:0 0.24rem;
+    box-sizing:border-box;
+    border-bottom:1px solid #EBEDF0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    &__info{
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+
+      &__first{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+
+        &__img{
+          width:0.54rem;
+          height:0.54rem;
+
+          &.none_pic{
+            border-radius:50%;
+            border:1px dashed #E1E3E6;
+            background:#F7F9FA;
+          }
+          img{
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          }
+        }
+        &__txt{
+          color:#323333;
+          font-size:0.28rem;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          margin-left:0.18rem;
+
+          &:after{
+            display:inline;
+            content:'*';
+            color:#FF4D4F;
+            margin-left:0.12rem;
+            height:100%;
+            line-height:100%;
+            position:relative;
+            top:0.06rem;
+          }
+          &.category:after{
+            content:'';
+          }
+        }
+      }
+      &__second{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+
+        span{
+          color:#646566;
+          font-size:0.26rem;
+          padding:0.06rem 0.21rem;
+          margin-right:0.18rem;
+          background:#F7F9FA;
+          border-radius:0.3rem;
+
+          &:last-child{
+            margin-right:0;
+          }
+        }
+      }
+    }
+    &__icon{
+      width:0.42rem;
+      height:0.42rem;
+      background:url("../../assets/icon_arrow.png") center center no-repeat;
+      background-size:contain;
+      transform:rotate(-90deg);
+    }
+  }
+  &__item{
+    height:0.9rem;
+    padding-left:0.24rem;
+
+    &__box{
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding-right:0.24rem;
+      border-bottom:1px solid #EBEDF0;
+
+      input{
+        flex:1;
+        height:97%;
+        color:#323333;
+        font-size:0.28rem;
+        font-weight:400;
+        border:0;
+        margin:0 0.3rem;
+        box-sizing:border-box;
+
+        &::placeholder{
+          color:#C8CACC;
+          font-size:0.28rem;
+        }
+      }
+      &__limit{
+        color:#C8CACC;
+        font-size:0.24rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+      }
+      &__button{
+        color:#1A97FF;
+        font-size:0.28rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+      }
+    }
+    &.label_item{
+
+      .upload-question__body__item__box{
+        border:none;
+      }
+    }
+  }
+  &__label{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:0 0.24rem;
+
+    &__item{
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding:0.07rem 0.12rem;
+
+      &__txt{
+        color:#FFFFFF;
+        font-size:0.24rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+      }
+      &__remove{
+        width:0.3rem;
+        height:0.3rem;
+        margin-left:0.12rem;
+        background: url(../../assets/icon_close2_light.png) no-repeat center;
+        background-size: contain;
+      }
+      &:nth-child(3n-2) {
+        background: linear-gradient(315deg, rgba(255, 128, 89, 1) 0%, rgba(255, 138, 101, 1) 100%);
+      }
+
+      &:nth-child(3n-1) {
+        background: linear-gradient(135deg, rgba(255, 191, 102, 1) 0%, rgba(250, 172, 62, 1) 100%);
+      }
+
+      &:nth-child(3n) {
+        background: linear-gradient(270deg, rgba(77, 191, 180, 1) 0%, rgba(82, 204, 192, 1) 100%);
+      }
+      &:not(:last-child){
+        margin-right:0.24rem;
+      }
+    }
+  }
+  &__description{
+    padding:0.24rem;
+
+    .upload-question__body__header{
+      justify-content:flex-start;
+    }
+    &__textarea{
+      height:4.6rem;
+      margin:0.12rem 0 0;
+      padding:0;
+
+      textarea{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        border:0;
+        resize:none;
+        color:#646566;
+        font-size:0.28rem;
+
+        &::placeholder{
+          color:#C8CACC;
+          font-size:0.28rem;
+        }
+      }
+    }
+    &__word{
+      color:#C8CACC;
+      font-size:0.24rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      text-align:right;
+    }
+  }
+  &__more{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:0.88rem;
+    border-top:1px solid #EBEDF0;
+
+    &__txt{
+      color:#646566;
+      font-size:0.26rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+    }
+    &__icon{
+      margin-left:0.17rem;
+      width:0.25rem;
+      height:0.25rem;
+      background:url("../../assets/icon_arrow.png") center center no-repeat;
+      background-size:contain;
+    }
+  }
+  &__header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    &__txt{
+      color:#323333;
+      font-size:0.28rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+    }
+    &__necessary{
+      color:#FF4D4F;
+      margin-left:0.12rem;
+      position:relative;
+      top:0.06rem;
+    }
+  }
+}
+.upload-question__more{
+  margin-top:0.18rem;
+  background:#FFF;
+
+  &__header{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    &__txt{
+      color:#323333;
+      font-size:0.28rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+    }
+    &__tips{
+      color:#C8CACC;
+      font-size:0.24rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      margin-left:0.12rem;
+    }
+  }
+  &__video{
+    padding:0.24rem;
+
+    &__upload{
+      margin:0.24rem 0;
+      background:#F7F9FA;
+    }
+  }
+  &__files{
+    padding:0.24rem 0 0 0.24rem;
+    border-top:1px solid #EBEDF0;
+
+    &__upload{
+      margin-top:0.2rem;
+      margin-left:-0.24rem;
+    }
+  }
+}
+.upload-question__protocol{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:0.24rem;
+  margin-bottom:1.49rem;
+  font-size:0.24rem;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+
+  &__checkbox{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#323333;
+
+    &__dot{
+      width:0.3rem;
+      height:0.3rem;
+      margin-right:0.12rem;
+      border-radius:50%;
+      border:1px solid #C8CACC;
+      box-sizing:border-box;
+
+      &.checked{
+        border:0;
+        background:url("../../assets/icon_radio_sel.png") 0 0 no-repeat;
+        background-size:contain;
+      }
+    }
+  }
+  &__detail{
+    color:#1A97FF;
+  }
+}
+
+
+// 类别
+.upload-category__body{
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  height:calc(100vh - 0.44rem);
+
+  &__father{
+    width:1.45rem;
+    background:#F7F9FA;
+
+    &__list{
+
+      &__item{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        height:1.05rem;
+        border-bottom:1px solid #FFF;
+
+        span{
+          width:0.04rem;
+          height:100%;
+        }
+        p{
+          flex:1;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          color:#323333;
+          font-size:0.28rem;
+          margin:0;
+          padding:0;
+        }
+        &.active{
+          background:#FFF;
+
+          span{
+            background:linear-gradient(180deg,rgba(0,240,254,1) 0%,rgba(26,151,255,1) 100%);
+          }
+        }
+      }
+    }
+  }
+  &__child{
+    flex:1;
+    height:100%;
+    padding:0.18rem 0.28rem;
+    background:#FFF;
+
+    &__tips{
+      margin:0;
+      padding:0;
+      color:#C8CACC;
+      font-size:0.22rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+    }
+    &__list{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-start;
+      margin-top:0.18rem;
+
+      &__item{
+        height:0.6rem;
+        padding:0.12rem 0.25rem;
+        margin:0 0.19rem 0.28rem 0;
+        box-sizing:border-box;
+        background:#F7F9FA;
+        border-radius:0.3rem;
+        color:#646566;
+        font-size:0.26rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+
+        &.active{
+          color:#FFF;
+          background:#1A97FF;
+          &.active_orange{
+            background:#FF6F00;
+          }
+        }
+      }
+    }
+  }
+}

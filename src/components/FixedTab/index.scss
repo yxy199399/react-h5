@@ -1,0 +1,16 @@
+.ks-tabs {
+  &__fixed {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 7.5rem;
+
+    &--show {
+      display: block;
+    }
+  }
+}

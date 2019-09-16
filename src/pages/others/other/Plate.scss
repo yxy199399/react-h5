@@ -1,0 +1,35 @@
+.other-home-plate {
+  background: #ffffff;
+  margin-top: 0.24rem;
+
+  .ks-video-item {
+    margin: 0.24rem;
+    padding: 0;
+  }
+
+  .ks-article-card {
+    margin: 0 0.24rem;
+    box-shadow: none;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  .ks-encyc-card{
+    padding: 0.18rem 0;
+    box-shadow: none;
+    border-bottom: 0.01rem solid #EBEDF0FF;
+    margin: 0 0.24rem;
+  }
+  .ks-question-card{
+    box-shadow: none;
+    border: 1px solid rgba(235,237,240,1);
+    margin: 0.24rem;
+  }
+  // &__airticle {
+  //   display: block;
+  //   background: #fff;
+  //   padding: 0 0.24rem;
+  //   > div {
+  //     background: #fff;
+  //   }
+  // }
+}

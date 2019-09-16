@@ -1,0 +1,49 @@
+.ks-counter {
+  display: flex;
+  height: 0.54rem;
+  border: 1px solid #e1e3e6;
+
+  &__btn {
+    position: relative;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    width: 0.54rem;
+    height: 0.54rem;
+    background: #f7fafc;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0.22rem;
+      height: 0.02rem;
+      background: #969899;
+    }
+
+    [disabled]::before,
+    [disabled]::after {
+      background: #e1e3e6;
+    }
+  }
+
+  &__btn ~ &__btn::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  &__number {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+    min-width: 0.8rem;
+    height: 0.54rem;
+    line-height: 0.54rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #323333;
+    border-left: 1px solid #e1e3e6;
+    border-right: 1px solid #e1e3e6;
+  }
+}

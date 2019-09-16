@@ -1,0 +1,46 @@
+@import '../../mixin';
+.ks-other-answer-card {
+  box-sizing: border-box;
+  min-height: 2.24rem;
+  background: #ffffff;
+  border: 0.01rem solid #ebedf0;
+  margin: 0.24rem;
+  &__title {
+    height: 0.6rem;
+    background: #fafbfc;
+    border-bottom: 0.01rem solid #ebedf0;
+    width: 100%;
+    font-size: 0.28rem;
+    color: #969899;
+    padding: 0 0.18rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+  }
+  &__info {
+    margin: 0.18rem 0.18rem 0 0.18rem;
+    font-size: 0.26rem;
+    color: #323333;
+    box-sizing: border-box;
+    @include ellipsis(3, 0.4rem);
+    height: auto;
+    max-height: 0.4rem * 3;
+  }
+  &__footer {
+    display: flex;
+    padding: 0.18rem;
+  }
+  &__power {
+    padding: 0 0.15rem 0 0.3rem;
+    font-size: 0.22rem;
+    color: #c8cacc;
+    background: url(../../assets/icon_battery_nor.png) no-repeat left center;
+    background-size: 0.23rem;
+  }
+  &__date {
+    padding: 0 0.15rem 0 0.3rem;
+    font-size: 0.22rem;
+    color: #c8cacc;
+    background: url(../../assets/icon_date.png) no-repeat left center;
+    background-size: 0.23rem;
+  }
+}

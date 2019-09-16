@@ -1,0 +1,64 @@
+.address-picker {
+  &__list {
+    background: #ffffff;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 1.34rem;
+    padding: 0 0.24rem;
+    border-bottom: 1px solid #f0f3f5;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &__check {
+      margin-right: 0.24rem;
+      width: 0.3rem;
+      height: 0.3rem;
+      background: url(../../assets/icon_radio_sel.png) no-repeat center;
+      background-size: contain;
+    }
+
+    &__info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    &__side {
+      margin-left: 0.24rem;
+      font-size: 0.32rem;
+      color: #1a97ff;
+    }
+
+    &__title,
+    &__desc {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__title {
+      font-size: 0.32rem;
+      color: #323333;
+    }
+
+    &__desc {
+      font-size: 0.26rem;
+      color: #969899;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.6rem 0.4rem;
+    height: 0.88rem;
+    font-size: 0.34rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+  }
+}

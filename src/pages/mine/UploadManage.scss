@@ -1,0 +1,402 @@
+@import 'src/mixin';
+
+.upload-manage {
+  background: #ffffff;
+}
+
+.upload-video-card,
+.upload-article-card {
+  display: flex;
+  // background: #ffffff;
+  padding: 0.3rem 0.24rem 0;
+
+  &__cover {
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 0.18rem;
+    width: 2.84rem;
+    height: 1.6rem;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__tag {
+      position: absolute;
+      top: 0.08rem;
+      left: 0.12rem;
+      height: 0.35rem;
+      display: flex;
+      padding: 0 0.08rem;
+      background: linear-gradient(225deg, rgba(0, 242, 254, 0.8) 0%, rgba(26, 148, 255, 0.8) 100%);
+      font-size: 0.22rem;
+      color: #ffffff;
+    }
+
+    &__len {
+      position: absolute;
+      right: 0.11rem;
+      bottom: 0.08rem;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      padding: 0 0.08rem;
+      color: #ffffff;
+      font-size: 0.18rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__info {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include ellipsis(2, 0.42rem);
+    font-size: 0.28rem;
+    color: #323333;
+  }
+
+  &__meta {
+    display: flex;
+    font-size: 0.22rem;
+    color: #969899;
+  }
+
+  &__more {
+    margin-left: auto;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../assets/icon_more_dot.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__status {
+    padding-left: 0.36rem;
+    font-size: 0.24rem;
+    background: no-repeat left center;
+    background-size: 0.24rem;
+
+    &--2 {
+      background-image: url(../../assets/icon_status_2.png);
+      color: #1a97ff;
+    }
+
+    &--3 {
+      background-image: url(../../assets/icon_status_3.png);
+      color: #ff4d4f;
+    }
+  }
+
+  &__views,
+  &__date {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    margin-right: 0.25rem;
+    padding-left: 0.3rem;
+    background: url(../../assets/icon_eye_dark.png) no-repeat left center;
+    background-size: 0.24rem;
+  }
+
+  &__date {
+    background-image: url(../../assets/icon_clock.png);
+  }
+}
+
+.upload-article-card {
+  &__cover {
+    width: 2.24rem;
+    height: 1.4rem;
+
+    &__play {
+      position: absolute;
+      right: 0.2rem;
+      bottom: 0.13rem;
+      width: 0.42rem;
+      height: 0.42rem;
+      background: url(../../assets/play_btn.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+
+.upload-ency-card {
+  padding: 0.3rem 0.24rem 0;
+
+  &__title {
+    position: relative;
+    font-size: 0.28rem;
+    color: #323333;
+    line-height: 0.42rem;
+    @include ellipsis;
+    text-indent: 0.14rem;
+    margin-bottom: 0.12rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -0.15rem;
+      width: 0.08rem;
+      height: 0.3rem;
+      background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+    }
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__cover {
+    flex-shrink: 0;
+    margin-right: 0.18rem;
+    width: 2.08rem;
+    height: 1.3rem;
+  }
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__cont {
+    @include ellipsis(2, 0.4rem);
+    font-size: 0.26rem;
+    color: #969899;
+  }
+
+  &__meta {
+    display: flex;
+    font-size: 0.22rem;
+    color: #969899;
+  }
+
+  &__views,
+  &__date {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-right: 0.25rem;
+    padding-left: 0.27rem;
+    background: url(../../assets/icon_eye_dark.png) no-repeat left center;
+    background-size: 0.24rem;
+  }
+
+  &__date {
+    background-image: url(../../assets/icon_clock.png);
+  }
+
+  &__more {
+    margin-left: auto;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../assets/icon_more_dot.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__status {
+    font-size: 0.24rem;
+    padding-left: 0.36rem;
+    background: no-repeat left center;
+    background-size: 0.3rem;
+
+    &--2 {
+      color: #1a97ff;
+      background-image: url(../../assets/icon_status_2.png);
+    }
+    &--3 {
+      color: #ff4d4f;
+      background-image: url(../../assets/icon_status_3.png);
+    }
+    &--4 {
+      color: #ff6f00;
+      background-image: url(../../assets/icon_status_4.png);
+    }
+    &--5 {
+      color: #acc4da;
+      background-image: url(../../assets/icon_status_5.png);
+    }
+  }
+}
+
+.upload-question-card {
+  display: flex;
+  margin: 0.3rem 0.24rem 0;
+  background: #ffffff;
+  border: 1px solid #ebedf0;
+  height: 2.28rem;
+
+  &__side {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 0.95rem;
+    border-right: 1px solid #ebedf0;
+    background: #fafbfc;
+
+    &__item {
+      padding: 0.46rem 0.05rem 0.24rem;
+      line-height: 0.3rem;
+      font-size: 0.22rem;
+      color: #646566;
+      text-align: center;
+      background: url(../../assets/icon_battery_nor.png) no-repeat top center;
+      background-size: 0.42rem;
+      @include ellipsis;
+
+      &:last-child {
+        padding-bottom: 0;
+        background-image: url(../../assets/icon_answer_nor.png);
+      }
+    }
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+    padding: 0.18rem;
+  }
+
+  &__title {
+    font-size: 0.28rem;
+    color: #323333;
+    line-height: 0.42rem;
+    @include ellipsis;
+  }
+
+  &__cont {
+    font-size: 0.26rem;
+    color: #969899;
+    line-height: 0.4rem;
+    @include ellipsis;
+    margin-bottom: 0.12rem;
+  }
+
+  &__tags {
+    margin-bottom: 0.23rem;
+  }
+
+  &__footer {
+    display: flex;
+    // align-self: flex-end;
+  }
+
+  &__date {
+    font-size: 0.22rem;
+    color: #969899;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.3rem;
+    background: url(../../assets/icon_clock.png) no-repeat left center;
+    background-size: 0.22rem;
+  }
+
+  &__more {
+    margin-left: auto;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../assets/icon_more_dot.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__status {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    padding-left: 0.36rem;
+    background: no-repeat left center;
+    background-size: 0.3rem;
+
+    &--2 {
+      color: #1a97ff;
+      background-image: url(../../assets/icon_status_2.png);
+    }
+
+    &--3 {
+      color: #ff4d4f;
+      background-image: url(../../assets/icon_status_3.png);
+    }
+  }
+}
+
+.upload-answer-card {
+  margin: 0.3rem 0.24rem 0;
+  border: 1px solid #ebedf0;
+
+  &__title {
+    padding: 0 0.18rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #fafbfc;
+    color: #969899;
+    font-size: 0.28rem;
+    @include ellipsis;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  &__body {
+    padding: 0.18rem;
+  }
+
+  &__cont {
+    font-size: 0.26rem;
+    color: #323333;
+    @include ellipsis(3, 0.4rem);
+    margin-bottom: 0.25rem;
+  }
+
+  &__meta {
+    display: flex;
+  }
+
+  &__likes,
+  &__date {
+    margin-right: 0.24rem;
+    font-size: 0.22rem;
+    color: #969899;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.3rem;
+    background: url(../../assets/icon_battery_nor.png) no-repeat left center;
+    background-size: 0.22rem;
+  }
+
+  &__date {
+    background-image: url(../../assets/icon_clock.png);
+  }
+
+  &__more {
+    margin-left: auto;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../assets/icon_more_dot.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__status {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    padding-left: 0.36rem;
+    background: no-repeat left center;
+    background-size: 0.3rem;
+
+    &--2 {
+      color: #1a97ff;
+      background-image: url(../../assets/icon_status_2.png);
+    }
+
+    &--3 {
+      color: #ff4d4f;
+      background-image: url(../../assets/icon_status_3.png);
+    }
+  }
+}

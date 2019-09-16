@@ -1,0 +1,131 @@
+.mask {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.58);
+}
+.masktrue {
+  display: block;
+}
+.maskfalse {
+  display: none;
+}
+.modelshowView,
+.modelhideView {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modelshowView {
+  transform: translateY(0);
+}
+.modelhideView {
+  transform: translateY(100%);
+}
+
+.model {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 998;
+  background: #fff;
+  .li{
+    padding: 0 0.3rem;
+    position: relative;
+    .header{
+      display: flex;
+      align-items: flex-end;
+      .headerImg{
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius:12px;
+        border:1px solid rgba(225,227,230,1);
+      }
+      div{
+        font-size:0.36rem;
+        color:rgba(255,71,51,1);
+        font-family:PingFangSC;
+        font-weight:500;
+        margin-left: 0.23rem;
+        span{
+          font-size:0.22rem;
+        }
+        p{
+          font-size:0.24rem;
+          font-family:PingFangSC;
+          font-weight:400;
+          color:rgba(150,152,153,1);
+          margin: 0;
+        }
+      }
+    }
+    i {
+      width: 0.42rem;
+      height: 0.42rem;
+      background: url(../../assets/icon_close2_dark.png) no-repeat center;
+      background-size: contain;
+      display: block;
+      position: absolute;
+      top: 0.42rem;
+      right: 0.42rem;
+    }
+    h2{
+      height:0.37rem;
+      font-size:0.26rem;
+      font-family:PingFangSC;
+      font-weight:600;
+      color:rgba(50,51,51,1);
+      line-height:0.37rem;
+      margin-bottom: 0;
+    }
+    .con{
+      display: flex;
+      flex-flow: row wrap;
+      .item{
+        font-size:0.26rem;
+        font-family:PingFangSC;
+        font-weight:400;
+        color:rgba(100,101,102,1);
+        line-height:0.37rem;
+        padding: 0.09rem 0.42rem;
+        background:rgba(247,249,250,1);
+        border-radius:6px;
+        margin-right: 0.42rem;
+        margin-top: 0.18rem;
+        border: 1px solid rgba(247,249,250,1);
+      }
+      .checked{
+        border:1px solid #1A97FF;
+        color: #1A97FF;
+      }
+    }
+    &:first-child{
+      padding-top: 0.3rem;
+    }
+    &:last-child{
+      padding-bottom: 0.3rem;
+    }
+    button{
+      height:0.72rem;
+      background:linear-gradient(135deg,rgba(0,240,254,1) 0%,rgba(26,151,255,1) 100%);
+      border-radius:12px;
+      width: 100%;
+      text-align: center;
+      line-height: 0.72rem;
+      color: #fff;
+      margin-top: 0.3rem;
+      border: none;
+      outline: none;
+    }
+  }
+  .maxH{
+    max-height: 7rem;
+    overflow: auto;
+    padding-top: 0.3rem;
+  }
+}

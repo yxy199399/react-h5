@@ -1,0 +1,42 @@
+.ks-share {
+  &__holder {
+    height: 1.2rem;
+  }
+
+  &__bar {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 7.5rem;
+    height: 1rem;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+    width: 2rem;
+    height: 0.72rem;
+    background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+    font-size: 0.28rem;
+    color: #ffffff;
+
+    &--light {
+      border: 1px solid #0dc4ff;
+      border-image: linear-gradient(135deg, rgba(0, 240, 254, 1), rgba(26, 151, 255, 1)) 1 1;
+      color: #0dc4ff;
+      background: #fff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

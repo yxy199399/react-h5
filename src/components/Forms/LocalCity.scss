@@ -1,0 +1,33 @@
+.ks-local-city {
+  position: relative;
+  display: inline-block;
+  margin: 0.18rem 0.74rem 0.18rem;
+  padding: 0 0.2rem;
+  min-width: 1.12rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+  border-radius: 0.44rem;
+  font-size: 0.26rem;
+  color: #646566;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url(../../assets/icon_location_nor.png) no-repeat center;
+    background-size: 0.44rem;
+  }
+
+  &--active {
+    background: #fff;
+    color: #323333;
+
+    &::before {
+      background-image: url(../../assets/icon_location.png);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.ks-switch {
+  position: relative;
+  padding: 0 0.06rem;
+
+  &--checked &__text {
+    padding: 0 0.52rem 0 0.14rem;
+    background: #0dc4ff linear-gradient(135deg, #00f0fe, #1a97ff);
+    color: #ffffff;
+  }
+
+  &--checked &__btn {
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0.52rem;
+    height: 0.52rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    transform: translate(0, -50%);
+    transition: all 0.3s ease;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    min-width: 1rem;
+    display: block;
+    padding: 0 0.14rem 0 0.52rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    border-radius: 0.36rem;
+    color: #afb1b3;
+    background: #e1e3e6;
+  }
+}

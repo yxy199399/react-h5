@@ -1,0 +1,117 @@
+.other_home {
+  .other_bg {
+    width: 100%;
+    height: 1.875rem;
+    display: block;
+  }
+  .other_info {
+    background: #ffffff;
+    padding: 0rem 0.24rem;
+    .other_top_info {
+      display: flex;
+      margin-top: 0.24rem;
+      .other_name {
+        margin: 0;
+        color: #323333;
+        font-size: 0.34rem;
+      }
+      .other_job {
+        padding: 0 0.15rem 0 0.3rem;
+        font-size: 0.22rem;
+        color: #646566;
+        background: url(../../../assets/icon_Career@2x.png) no-repeat left center;
+        background-size: 0.3rem;
+        line-height: 0.5rem;
+        margin-left: 0.19rem;
+      }
+    }
+    .other_autograph {
+      margin-top: 0.08rem;
+      color: #969899;
+      font-size: 0.24rem;
+    }
+    .other_top {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      &__avatar {
+        position: absolute;
+        width: 1.2rem;
+        height: 1.2rem;
+        top: -0.47rem;
+      }
+      .other_seize_seat {
+        width: 1.2rem;
+        // height: 1.2rem;
+      }
+      .other_top_right {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.18rem;
+        div {
+          width: 1.36rem;
+          height: 0.54rem;
+          text-align: center;
+          line-height: 0.54rem;
+        }
+        .other_top_right_left {
+          color: #969899;
+          font-size: 0.26rem;
+          background: rgba(255, 255, 255, 1);
+          border: 0.01rem solid rgba(225, 227, 230, 1);
+          margin-right: 0.18rem;
+        }
+        .other_top_right_false {
+          color: #ffffff;
+          font-size: 0.26rem;
+          background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+        }
+        .other_top_right_true {
+          border: 0.02rem solid;
+          border-image: linear-gradient(135deg, rgba(0, 240, 254, 1), rgba(26, 151, 255, 1)) 1 1;
+          font-size: 0.26rem;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          color: rgba(26, 151, 255, 1);
+          background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .other_data {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 0.36rem;
+      .list_division {
+        width: 0.01rem;
+        height: 0.6rem;
+        background: #ebedf0;
+      }
+      .other_data_list {
+        width: 33.3%;
+        text-align: center;
+        .other_data_list_num {
+          .number {
+            color: #323333;
+            font-size: 0.28rem;
+            margin-right: 0.12rem;
+          }
+          .type {
+            color: #969899;
+            font-size: 0.2rem;
+          }
+        }
+        .type_img {
+          margin-top: 0.18rem;
+          height: 0.42rem;
+          img {
+            width: 0.42rem;
+            height: 0.42rem;
+          }
+        }
+      }
+    }
+  }
+}

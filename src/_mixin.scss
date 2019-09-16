@@ -1,0 +1,28 @@
+$colors: (
+  (#ff8059, #ff8a65),
+  (#ffbf66, #faac3e),
+  (#5666bf, #7786d9),
+  (#4dbfb4, #52ccc0),
+  (#78909c, #86a4b3),
+  (#99776b, #a6877c),
+  (#3c9ff0, #5cb3fa),
+  (#c0d9f0, #d0e4f5)
+);
+
+@mixin ellipsis($line: 1, $line-height: 0.32rem) {
+  @if $line == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    height: $line * $line-height;
+    line-height: $line-height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+  }
+}

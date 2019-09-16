@@ -1,0 +1,9 @@
+.goods-comment {
+  min-height: 100vh;
+  background: #ffffff;
+
+  &__item {
+    margin: 0 0.24rem;
+    border-bottom: 1px solid #ebedf0;
+  }
+}

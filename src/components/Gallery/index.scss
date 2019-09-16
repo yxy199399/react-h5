@@ -1,0 +1,66 @@
+.ks-img-preview {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  cursor: pointer;
+
+  &__inner {
+    position: relative;
+    height: 100vh;
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+
+  &__indicator {
+    z-index: 2;
+    position: absolute;
+    left: 0.24rem;
+    bottom: 0.68rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    padding: 0 0.22rem;
+    background: rgba(#000, 0.4);
+    // opacity: 0.4;
+    color: #ffffff;
+    font-size: 0.26rem;
+  }
+
+  &__item {
+    position: relative;
+    height: 100vh !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    // center image
+    white-space: nowrap;
+    font-size: 0;
+    text-align: center;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 100%;
+      background: #000;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+
+  // &__item--normal &__img {
+  //   max-height: none;
+  // }
+
+  &__item--enlarge &__img {
+    max-height: none;
+  }
+}

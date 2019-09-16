@@ -1,0 +1,45 @@
+.ks-tags {
+  overflow: hidden;
+  height: 0.36rem;
+
+  &__tag {
+    float: left;
+    margin: 0 0.2rem 0.2rem 0;
+  }
+
+  &__txt {
+    float: left;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    padding: 0 0.1rem;
+    font-size: 0.24rem;
+    background: #ebedf0;
+    color: #969899;
+  }
+
+  &__ico {
+    float: left;
+    height: 0.36rem;
+    width: 0.26rem;
+    background: url(../../assets/tag_light.png) no-repeat left center;
+    background-size: contain;
+  }
+}
+
+.ks-tags--light {
+  .ks-tags {
+    &__txt {
+      background: rgba(#969899, 0.6);
+      color: #c8cacc;
+    }
+
+    &__ico {
+      background-image: url(../../assets/tag_dark.png);
+    }
+  }
+}
+
+.ks-tags--warp {
+  height: auto;
+  margin-bottom: -0.2rem;
+}

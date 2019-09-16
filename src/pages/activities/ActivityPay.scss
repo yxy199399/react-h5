@@ -1,0 +1,141 @@
+.activity-pay {
+  padding-bottom: 1rem;
+}
+
+.activity-pay-gutter {
+  margin: 0;
+  padding: 0.15rem 0.24rem;
+  line-height: 1.6;
+  font-size: 0.3rem;
+  color: #646566;
+  font-weight: normal;
+}
+
+.activity-pay-list {
+  padding: 0 0.24rem;
+  background: #ffffff;
+
+  &__item {
+    display: flex;
+    height: 0.88rem;
+    border-bottom: 1px solid #ebedf0;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__label {
+    font-size: 0.28rem;
+    color: #969899;
+  }
+
+  &__cont {
+    margin-left: auto;
+    font-size: 0.28rem;
+    color: #323333;
+  }
+
+  &__country {
+    display: flex;
+    align-items: center;
+    margin-right: 0.24rem;
+    padding-right: 0.22rem;
+    height: 0.42rem;
+    border-right: 1px solid #e1e3e6;
+    font-size: 0.28rem;
+    color: #969899;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      margin-left: 0.18rem;
+      width: 0.27rem;
+      height: 0.27rem;
+      background: url(../../assets/icon_arrow.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    padding: 0 0.24rem 0 0;
+    border: 0;
+    height: 100%;
+    min-width: 0;
+    font-size: 0.28rem;
+    color: #323333;
+
+    &::placeholder {
+      color: #c8cacc;
+    }
+  }
+}
+
+.activity-pay-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: linear-gradient(135deg, #00f0fe, #1a97ff);
+  color: #ffffff;
+
+  &--code {
+    flex-shrink: 0;
+    width: 1.56rem;
+    height: 0.6rem;
+    font-size: 0.26rem;
+  }
+
+  &--pay {
+    margin: auto;
+    width: 6.7rem;
+    height: 0.88rem;
+    font-size: 0.34rem;
+  }
+
+  &[disabled] {
+    background: #c8cacc;
+    pointer-events: none;
+  }
+}
+
+.activity-pay-payment {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 0.24rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: no-repeat center;
+    background-size: contain;
+
+    &--alipay {
+      background-image: url(../../assets/icon_alipay.png);
+    }
+
+    &--wechat {
+      background-image: url(../../assets/icon_wechat.png);
+    }
+  }
+
+  &__radio {
+    margin-left: auto;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../assets/icon_radio_nor.png) no-repeat center;
+    background-size: contain;
+    &--sel {
+      background-image: url(../../assets/icon_radio_sel.png);
+    }
+  }
+
+  &__cont {
+    font-size: 0.26rem;
+    color: #323333;
+  }
+}

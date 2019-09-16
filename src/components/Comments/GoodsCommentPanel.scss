@@ -1,0 +1,47 @@
+.ks-goods-comment-header {
+  display: flex;
+  align-items: center;
+  padding: 0 0.24rem;
+  height: 0.82rem;
+  background: #f7f9fa;
+
+  &__title {
+    font-size: 0.28rem;
+    color: #323333;
+  }
+
+  &__side {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.24rem;
+    color: #646566;
+  }
+}
+
+.ks-goods-comment-list {
+  padding: 0 0.24rem;
+}
+
+.ks-goods-comment-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.88rem;
+  border-top: 0.01rem solid #e1e3e6;
+  font-size: 0.26rem;
+  color: #1a97ff;
+}
+
+.ks-goods-comment-empty {
+  $h: 2.14rem;
+
+  margin: 0;
+  padding-top: 3.2rem;
+  padding-bottom: 0.8rem;
+  background: url(../../assets/empty.png) no-repeat center 0.8rem;
+  background-size: 3.2rem auto;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #646566;
+}

@@ -1,0 +1,42 @@
+.ks-agreement {
+  min-height: 100vh;
+  background: #ffffff;
+
+  &__content {
+    flex: 1;
+    padding: 0.24rem 0.22rem 1rem;
+  }
+
+  .ql-editor,
+  &__content {
+    font-size: 0.26rem;
+    color: #323333;
+  }
+
+  &__footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.98rem;
+    background: #fff;
+
+    &__btn {
+      margin: 0;
+      padding: 0;
+      border: none;
+      width: 1.7rem;
+      height: 0.66rem;
+      line-height: 0.66rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #ffffff;
+      background: linear-gradient(135deg, rgba(0, 240, 254, 1) 0%, rgba(26, 151, 255, 1) 100%);
+    }
+  }
+}
